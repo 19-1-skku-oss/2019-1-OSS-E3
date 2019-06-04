@@ -33,7 +33,49 @@ feature or behavior! You never know which games students will engage with best.
 - Python.org :  <https://www.python.org/>
 
 
-# 2019-1-OSS-E3 Team Members
+## Quickstart
+
+
+Installing Free Python Games is simple with `pip
+<https://pypi.python.org/pypi/pip>`_::
+
+  ` $ python3 -m pip install freegames `
+
+Free Python Games supports a command-line interface (CLI). Help for the CLI is
+available using::
+
+  ` $ python3 -m freegames --help `
+
+The CLI supports three commands: list, copy, and show. For a list of all games
+run::
+
+  ` $ python3 -m freegames list `
+
+Any of the listed games may be played by executing the Python module from the
+command-line. To reference the Python module, combine "freegames" with the name
+of the game. For example, to play the "snake" game run::
+
+  ` $ python3 -m freegames.snake `
+
+Games can be modified by copying their source code. The copy command will
+create a Python file in your local directory which you can edit. For example,
+to copy and play the "snake" game run::
+
+ ` $ python3 -m freegames copy snake `<br>
+ ` $ python3 snake.py `
+
+Python includes a built-in text editor named IDLE which can also execute Python
+code. To launch the editor and make changes to the "snake" game run::
+
+  ` $ python3 -m idlelib.idle snake.py `
+
+You can also access documentation in the interpreter with Python's built-in
+help function::
+
+  ` >>> import freegames `<br>
+  ` >>> help(freegames) `
+
+## 2019-1-OSS-E3 Team Members
 
 - 김민수(소프트웨어/18) : kimminsuu
 - 박정재(소프트웨어/18) : tkfhdk123
