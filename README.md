@@ -13,13 +13,13 @@
 Free Python Games
 =================
 
-`Free Python Games`<http://www.grantjenks.com/docs/freegames/> is an Apache2 licensed collection of free Python games
+`Free Python Games` is an Apache2 licensed collection of free Python games
 intended for education and fun. The games are written in simple Python code and
 designed for experimentation and changes. Simplified versions of several
 classic arcade games are included.
 
 Python is one of the top-five most popular programming languages in the world
-and available for free from `Python.org <https://www.python.org/>`. Python
+and available for free from `Python.org`. Python
 includes an extensive Standard Library distributed with your installation. The
 Standard Library has a module called Turtle which is a popular way to introduce
 programming to kids. Turtle was part of the original Logo programming language
@@ -41,4 +41,6 @@ with a list of exercises to work through with students. Creativity and
 flexibility is important. There is no right or wrong way to implement a new
 feature or behavior! You never know which games students will engage with best.
 
+- Free Python Games : <http://www.grantjenks.com/docs/freegames/>
+- Python.org :  <https://www.python.org/>
 
