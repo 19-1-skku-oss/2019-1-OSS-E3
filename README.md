@@ -1,4 +1,4 @@
-# Free Python Games
+## Free Python Games
 
 
 `Free Python Games` is an Apache2 licensed collection of free Python games
@@ -75,7 +75,8 @@ help function::
   ` >>> help(freegames) `
 
 
-## 2019-1-OSS-E3 Team Members
+## Team Members
+
 
 - 김민수(소프트웨어/18) : kimminsuu
 - 박정재(소프트웨어/18) : tkfhdk123
