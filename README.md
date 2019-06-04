@@ -74,6 +74,7 @@ help function::
   ` >>> import freegames `<br>
   ` >>> help(freegames) `
 
+
 ## 2019-1-OSS-E3 Team Members
 
 - 김민수(소프트웨어/18) : kimminsuu
@@ -81,3 +82,7 @@ help function::
 - 유재원(소프트웨어/18) : itaewonhreedom
 - 이재웅(소프트웨어/18) : jaeung0527
 
+
+## Our Roles
+
+- 박정재 : READ.md 수정, snake.py 코드수정, 번역 및 
