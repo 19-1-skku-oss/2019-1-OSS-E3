@@ -36,7 +36,7 @@ feature or behavior! You never know which games students will engage with best.
 ## Quickstart
 
 
-Installing Free Python Games is simple with pip<https://pypi.python.org/pypi/pip>
+Installing Free Python Games is simple with pip - <https://pypi.python.org/pypi/pip>
 
   ` $ python3 -m pip install freegames `
 
