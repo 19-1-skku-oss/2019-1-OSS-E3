@@ -1,17 +1,5 @@
-# 2019-1-OSS-E3
+# Free Python Games
 
-## About Our Team Members
-
-- 김민수(소프트웨어/18) : kimminsuu
-- 김세란(소프트웨어/18) : theran23
-- 박정재(소프트웨어/18) : tkfhdk123
-- 유재원(소프트웨어/18) : itaewonhreedom
-- 이재웅(소프트웨어/18) : jaeung0527
-
-## About Project
-
-Free Python Games
-=================
 
 `Free Python Games` is an Apache2 licensed collection of free Python games
 intended for education and fun. The games are written in simple Python code and
@@ -43,4 +31,12 @@ feature or behavior! You never know which games students will engage with best.
 
 - Free Python Games : <http://www.grantjenks.com/docs/freegames/>
 - Python.org :  <https://www.python.org/>
+
+
+# 2019-1-OSS-E3 Team Members
+
+- 김민수(소프트웨어/18) : kimminsuu
+- 박정재(소프트웨어/18) : tkfhdk123
+- 유재원(소프트웨어/18) : itaewonhreedom
+- 이재웅(소프트웨어/18) : jaeung0527
 
