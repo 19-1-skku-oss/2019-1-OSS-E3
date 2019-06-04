@@ -19,7 +19,7 @@ designed for experimentation and changes. Simplified versions of several
 classic arcade games are included.
 
 Python is one of the top-five most popular programming languages in the world
-and available for free from `Python.org`. Python
+and available for free from `Python.org` Python
 includes an extensive Standard Library distributed with your installation. The
 Standard Library has a module called Turtle which is a popular way to introduce
 programming to kids. Turtle was part of the original Logo programming language
