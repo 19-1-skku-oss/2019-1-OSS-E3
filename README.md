@@ -85,4 +85,4 @@ help function::
 
 ## Our Roles
 
-- 박정재 : READ.md 수정, snake.py 코드수정, 번역 및 
+- 박정재 : README.md 수정, snake.py 코드수정, 번역 및 피드백
