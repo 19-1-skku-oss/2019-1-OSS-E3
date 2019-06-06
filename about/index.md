@@ -6,7 +6,7 @@ date: 2019-06-06
 comments: false
 ---
     
-<center>**Free Python Games** is an Apache2 licensed collection of free Python games intended for education and fun.</center>
+<center><u>Free Python Games</u> is an Apache2 licensed collection of free Python games intended for education and fun.</center>
 
 ## 2019-1-OSS-E3 Team Members
 
