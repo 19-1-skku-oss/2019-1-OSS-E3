@@ -2,7 +2,7 @@
 layout: page
 title: About the project
 tags: [about, python3, games, oss]
-date: 2016-03-21
+date: 2019-06-06
 comments: false
 ---
     
