@@ -6,7 +6,7 @@ date: 2019-06-06
 comments: false
 ---
     
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+<center>**Free Python Games** is an Apache2 licensed collection of free Python games intended for education and fun.</center>
 
 ## 2019-1-OSS-E3 Team Members
 
