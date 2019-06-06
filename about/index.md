@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About the project
-tags: [about, Jekyll, theme, moon]
+tags: [about, python3, games, oss]
 date: 2016-03-21
 comments: false
 ---
