@@ -18,17 +18,16 @@ comments: false
 
 ## Preview
 
-Paint
-.....
-
-`Paint`_ -- draw lines and shapes on the screen. Click to mark the start of a
+** paint ** 
+***
+`Paint` draw lines and shapes on the screen. Click to mark the start of a
 shape and click again to mark its end. Different shapes and colors can be
 selected using the keyboard.
 
-.. ![paint](http://www.grantjenks.com/docs/freegames/_static/paint.gif)
-   :alt: Paint Free Python Game
+ ![paint](http://www.grantjenks.com/docs/freegames/_static/paint.gif)
 
-.. _`Paint`: http://www.grantjenks.com/docs/freegames/paint.html
+[paint code](`Paint`)<http://www.grantjenks.com/docs/freegames/paint.html>
+
 Snake
 .....
 
