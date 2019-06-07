@@ -63,16 +63,12 @@ wings. Watch out for black ravens as you fly across the screen.
 
 ![Flappy](http://www.grantjenks.com/docs/freegames/_static/flappy.gif)
 
-Memory
-......
-
-`Memory`_ -- puzzle game of number pairs. Click a tile to reveal a
+[**Memory**](http://www.grantjenks.com/docs/freegames/memory.html)
+-----
+`Memory` puzzle game of number pairs. Click a tile to reveal a
 number. Match two numbers and the tiles will disappear to reveal an image.
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/memory.gif
-   :alt: Memory Free Python Game
-
-.. _`Memory`: http://www.grantjenks.com/docs/freegames/memory.html
+![memory](http://www.grantjenks.com/docs/freegames/_static/memory.gif)
 
 Pong
 ....
