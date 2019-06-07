@@ -72,23 +72,18 @@ number. Match two numbers and the tiles will disappear to reveal an image.
 
 [**Pong**](http://www.grantjenks.com/docs/freegames/pong.html)
 -----
-
 `Pong` classic arcade game. Use the keyboard to move your paddle up and
 down. The first player to miss the ball loses.
 
 ![pong](http://www.grantjenks.com/docs/freegames/_static/pong.gif)
 
-Simon Says
-..........
-
-`Simon Says`_ -- classic memory puzzle game. Click the screen to start. Watch
+[**Simon Says**](http://www.grantjenks.com/docs/freegames/simonsays.html)
+-----
+`Simon Says` classic memory puzzle game. Click the screen to start. Watch
 the pattern and then click the tiles in the same order. Each time you get the
 sequence right the pattern gets one step longer.
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/simonsays.gif
-   :alt: Simon Says Free Python Game
-
-.. _`Simon Says`: http://www.grantjenks.com/docs/freegames/simonsays.html
+![Simon says](http://www.grantjenks.com/docs/freegames/_static/simonsays.gif)
 
 Tic Tac Toe
 ...........
