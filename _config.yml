@@ -4,7 +4,7 @@ bio:                'E3팀은 Free Python Games 오픈소프트웨어 프로젝�
 description:        "This blog is for free python games."
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/game.png'
+logo:               'assets/img/pacman.png'
 background:         'assets/img/background1.jpg'
 tiled_bg:           true   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
