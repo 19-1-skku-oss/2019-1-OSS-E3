@@ -26,7 +26,7 @@ selected using the keyboard.
 
  ![paint](http://www.grantjenks.com/docs/freegames/_static/paint.gif)
 
-[paint code](`Paint`)<http://www.grantjenks.com/docs/freegames/paint.html>
+[paint code](http://www.grantjenks.com/docs/freegames/paint.html)
 
 Snake
 .....
