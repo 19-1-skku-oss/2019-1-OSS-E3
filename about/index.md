@@ -90,7 +90,7 @@ sequence right the pattern gets one step longer.
 `Tic Tac Toe` classic game. Click the screen to place an X or O. Connect
 three in a row and you win!
 
-![Tic Tac Toe}(http://www.grantjenks.com/docs/freegames/_static/tictactoe.gif)
+![Tic Tac Toe](http://www.grantjenks.com/docs/freegames/_static/tictactoe.gif)
  
 
 [**Tiles**](http://www.grantjenks.com/docs/freegames/tiles.html)
