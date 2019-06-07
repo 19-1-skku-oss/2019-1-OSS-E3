@@ -41,17 +41,13 @@ the white food. Watch out for red ghosts that roam the maze.
 
 ![pacman](http://www.grantjenks.com/docs/freegames/_static/pacman.gif)
 
-Cannon
-......
-
-`Cannon`_ -- projectile motion. Click the screen to fire your cannnonball. The
+[**Cannon**](http://www.grantjenks.com/docs/freegames/cannon.html)
+-----
+`Cannon` projectile motion. Click the screen to fire your cannnonball. The
 cannonball pops blue balloons in its path. Pop all the balloons before they can
 cross the screen.
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/cannon.gif
-   :alt: Cannon Free Python Game
-
-.. _`Cannon`: http://www.grantjenks.com/docs/freegames/cannon.html
+![cannon](http://www.grantjenks.com/docs/freegames/_static/cannon.gif)
 
 Connect
 .......
