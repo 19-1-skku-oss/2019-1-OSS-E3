@@ -49,16 +49,12 @@ cross the screen.
 
 ![cannon](http://www.grantjenks.com/docs/freegames/_static/cannon.gif)
 
-Connect
-.......
-
-`Connect`_ -- Connect 4 game. Click a row to drop a disc. The first player to
+[**Connect**](http://www.grantjenks.com/docs/freegames/connect.html)
+-----
+`Connect` Connect 4 game. Click a row to drop a disc. The first player to
 connect four discs vertically, horizontally, or diagonally wins!
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/connect.gif
-   :alt: Connect 4 Free Python Game
-
-.. _`Connect`: http://www.grantjenks.com/docs/freegames/connect.html
+![connect](http://www.grantjenks.com/docs/freegames/_static/connect.gif)
 
 Flappy
 ......
