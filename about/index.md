@@ -70,16 +70,13 @@ number. Match two numbers and the tiles will disappear to reveal an image.
 
 ![memory](http://www.grantjenks.com/docs/freegames/_static/memory.gif)
 
-Pong
-....
+[**Pong**](http://www.grantjenks.com/docs/freegames/pong.html)
+-----
 
-`Pong`_ -- classic arcade game. Use the keyboard to move your paddle up and
+`Pong` classic arcade game. Use the keyboard to move your paddle up and
 down. The first player to miss the ball loses.
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/pong.gif
-   :alt: Pong Free Python Game
-
-.. _`Pong`: http://www.grantjenks.com/docs/freegames/pong.html
+![pong](http://www.grantjenks.com/docs/freegames/_static/pong.gif)
 
 Simon Says
 ..........
