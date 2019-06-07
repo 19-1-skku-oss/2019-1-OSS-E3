@@ -26,18 +26,15 @@ selected using the keyboard.
 
  ![paint](http://www.grantjenks.com/docs/freegames/_static/paint.gif)
 
-Snake
-.....
+[**Snake**](http://www.grantjenks.com/docs/freegames/snake.html)
+-----
 
-`Snake`_ -- classic arcade game. Use the arrow keys to navigate and eat the
+`Snake` classic arcade game. Use the arrow keys to navigate and eat the
 green food. Each time the food is consumed, the snake grows one segment
 longer. Avoid eating yourself or going out of bounds!
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/snake.gif
-   :alt: Snake Free Python Game
-
-.. _`Snake`: http://www.grantjenks.com/docs/freegames/snake.html
-
+![snake](http://www.grantjenks.com/docs/freegames/_static/snake.gif)
+   
 Pacman
 ......
 
