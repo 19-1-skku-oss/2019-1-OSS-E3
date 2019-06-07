@@ -85,125 +85,50 @@ sequence right the pattern gets one step longer.
 
 ![Simon says](http://www.grantjenks.com/docs/freegames/_static/simonsays.gif)
 
-Tic Tac Toe
-...........
-
-`Tic Tac Toe`_ -- classic game. Click the screen to place an X or O. Connect
+[**Tic Tac Toe**](http://www.grantjenks.com/docs/freegames/tictactoe.html)
+-----
+`Tic Tac Toe` classic game. Click the screen to place an X or O. Connect
 three in a row and you win!
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/tictactoe.gif
-   :alt: Tic Tac Toe Free Python Game
+![Tic Tac Toe}(http://www.grantjenks.com/docs/freegames/_static/tictactoe.gif)
+ 
 
-.. _`Tic Tac Toe`: http://www.grantjenks.com/docs/freegames/tictactoe.html
-
-Tiles
-.....
-
-`Tiles`_ -- puzzle game of sliding numbers into place. Click a tile adjacent to
+[**Tiles**](http://www.grantjenks.com/docs/freegames/tiles.html)
+-----
+`Tiles` puzzle game of sliding numbers into place. Click a tile adjacent to
 the empty square to swap positions. Can you make the tiles count one to fifteen
 from left to right and bottom to top?
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/tiles.gif
-   :alt: Tiles Free Python Game
+![Tiles](http://www.grantjenks.com/docs/freegames/_static/tiles.gif)
 
-.. _`Tiles`: http://www.grantjenks.com/docs/freegames/tiles.html
-
-Tron
-....
-
+[**Tron**](http://www.grantjenks.com/docs/freegames/tron.html)
+-----
 `Tron`_ -- classic arcade game. Use the keyboard to change the direction of
 your Tron player. Avoid touching the line drawn by your opponent.
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/tron.gif
-   :alt: Tron Free Python Game
+![Tron](http://www.grantjenks.com/docs/freegames/_static/tron.gif)
 
-.. _`Tron`: http://www.grantjenks.com/docs/freegames/tron.html
-
-Life
-....
-
-`Life`_ -- Conway's Game of Life. The classic, zero-player, cellular automation
+[**Life**](http://www.grantjenks.com/docs/freegames/life.html)
+-----
+`Life` Conway's Game of Life. The classic, zero-player, cellular automation
 created in 1970 by John Conway.
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/life.gif
-   :alt: Game of Life Free Python Game
+![Life](http://www.grantjenks.com/docs/freegames/_static/life.gif)
 
-.. _`Life`: http://www.grantjenks.com/docs/freegames/life.html
-
-Maze
-....
-
-`Maze`_ -- move from one side to another. Inspired by `A Universe in One Line
+[**Maze**](http://www.grantjenks.com/docs/freegames/maze.html)
+-----
+`Maze` move from one side to another. Inspired by `A Universe in One Line
 of Code with 10 PRINT`_. Tap the screen to trace a path from one side to
 another.
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/maze.gif
-   :alt: Maze Free Python Game
+![maze](http://www.grantjenks.com/docs/freegames/_static/maze.gif)
 
-.. _`Maze`: http://www.grantjenks.com/docs/freegames/maze.html
-.. _`A Universe in One Line of Code with 10 PRINT`: https://www.makeartwithpython.com/blog/10-print-in-python/
-
-Fidget
-......
-
-`Fidget`_ -- fidget spinner inspired animation. Click the screen to accelerate
+[**Fidget**](http://www.grantjenks.com/docs/freegames/fidget.html)
+-----
+`Fidget` fidget spinner inspired animation. Click the screen to accelerate
 the fidget spinner.
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/fidget.gif
-   :alt: Fidget Spinner Free Python Game
-
-.. _`Fidget`: http://www.grantjenks.com/docs/freegames/fidget.html
-
-
-User Guide
-----------
-
-For those wanting more details, this part of the documentation describes
-curriculum, API, and development.
-
-* `Talk: Give the Gift of Python`_
-* `Free Python Games Curriculum`_
-* `Free Python Games API Reference`_
-* `Free Python Games Development`_
-
-.. _`Talk: Give the Gift of Python`: http://www.grantjenks.com/docs/freegames/give-gift-python.html
-.. _`Free Python Games Curriculum`: http://www.grantjenks.com/docs/freegames/curriculum.html
-.. _`Free Python Games API Reference`: http://www.grantjenks.com/docs/freegames/api.html
-.. _`Free Python Games Development`: http://www.grantjenks.com/docs/freegames/development.html
-
-
-References
-----------
-
-* `Free Python Games Documentation`_
-* `Free Python Games at PyPI`_
-* `Free Python Games at GitHub`_
-* `Free Python Games Issue Tracker`_
-
-.. _`Free Python Games Documentation`: http://www.grantjenks.com/docs/freegames/
-.. _`Free Python Games at PyPI`: https://pypi.python.org/pypi/freegames
-.. _`Free Python Games at GitHub`: https://github.com/grantjenks/free-python-games
-.. _`Free Python Games Issue Tracker`: https://github.com/grantjenks/free-python-games/issues
-
-
-Free Python Games License
--------------------------
-
-Copyright 2017-2019 Grant Jenks
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License.  You may obtain a copy of the
-License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed
-under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-CONDITIONS OF ANY KIND, either express or implied.  See the License for the
-specific language governing permissions and limitations under the License.
-
-## Getting Started
-
+![Fidget](http://www.grantjenks.com/docs/freegames/_static/fidget.gif)
 
 
 
