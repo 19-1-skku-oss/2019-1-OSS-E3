@@ -25,7 +25,7 @@ Paint
 shape and click again to mark its end. Different shapes and colors can be
 selected using the keyboard.
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/paint.gif
+.. ![paint](http://www.grantjenks.com/docs/freegames/_static/paint.gif)
    :alt: Paint Free Python Game
 
 .. _`Paint`: http://www.grantjenks.com/docs/freegames/paint.html
