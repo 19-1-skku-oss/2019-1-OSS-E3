@@ -5,7 +5,7 @@ description:        "This blog is for free python games."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/pacman3.png'
-background:         'assets/img/background(dark).jpg'
+background:         'assets/img/background1.jpg'
 tiled_bg:           true   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                https://19-1-skku-oss.github.io/2019-1-OSS-E3/
