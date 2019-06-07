@@ -56,16 +56,12 @@ connect four discs vertically, horizontally, or diagonally wins!
 
 ![connect](http://www.grantjenks.com/docs/freegames/_static/connect.gif)
 
-Flappy
-......
-
-`Flappy`_ -- Flappy-bird inspired game. Click the screen to flap your
+[**Flappy**](http://www.grantjenks.com/docs/freegames/flappy.html)
+-----
+`Flappy` Flappy-bird inspired game. Click the screen to flap your
 wings. Watch out for black ravens as you fly across the screen.
 
-.. image:: http://www.grantjenks.com/docs/freegames/_static/flappy.gif
-   :alt: Flappy Bird Free Python Game
-
-.. _`Flappy`: http://www.grantjenks.com/docs/freegames/flappy.html
+![Flappy](http://www.grantjenks.com/docs/freegames/_static/flappy.gif)
 
 Memory
 ......
