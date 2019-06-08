@@ -18,4 +18,7 @@ Free Python Games 는 배우는만큼 즐거움을 얻는 것을 목표로, 2012
 ## QuickStart
 
 
-pip만 있으면 Free Python Games를 설치하는 방법은 간단하다 - 
+pip만 있으면 Free Python Games를 설치하는 방법은 간단하다 - <https://pypi.python.org/pypi/pip>
+
+  ` $ python3 -m pip install freegames `
+
