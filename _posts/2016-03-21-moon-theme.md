@@ -13,20 +13,160 @@ tag:
 comments: true
 ---
 
-//![Moon Homepage](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
+![Moon Homepage](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
     
-//<center><b>Moon</b> is a minimal, one column jekyll theme.</center>
+<center><b>Moon</b> is a minimal, one column jekyll theme.</center>
  
  이 프로젝트 페이지는 저희가 **수정** 혹은 **기여**한 파이썬 코드들을 정리한 곳입니다. 
       
 ## 김민수
 
-### Maze
-#### original code
+ ### Maze
+  #### original code
+ """Maze, move from one side to another.
+Excercises
+1. Keep score by counting taps.
+2. Make the maze harder.
+3. Generate the same maze twice.
+"""
+
+from turtle import *
+from random import random
+from freegames import line
+
+def draw():
+    "Draw maze."
+    color('black')
+    width(5)
+
+    for x in range(-200, 200, 40):
+        for y in range(-200, 200, 40):
+            if random() > 0.5:
+                line(x, y, x + 40, y + 40)
+            else:
+                line(x, y + 40, x + 40, y)
+
+    update()
+
+def tap(x, y):
+    "Draw line and dot for screen tap."
+    if abs(x) > 198 or abs(y) > 198:
+        up()
+    else:
+        down()
+
+    width(2)
+    color('red')
+    goto(x, y)
+    dot(4)
+
+setup(420, 420, 370, 0)
+hideturtle()
+tracer(False)
+draw()
+onscreenclick(tap)
+done()
+
+   #### edited code
 //
 
-#### edited code
+
+ ### *pong*
+  #### original code
+  
+"""Pong, classic arcade game.
+Exercises
+1. Change the colors.
+2. What is the frame rate? Make it faster or slower.
+3. Change the speed of the ball.
+4. Change the size of the paddles.
+5. Change how the ball bounces off walls.
+6. How would you add a computer player?
+6. Add a second ball.
+"""
+
+from random import choice, random
+from turtle import *
+from freegames import vector
+
+def value():
+    "Randomly generate value between (-5, -3) or (3, 5)."
+    return (3 + random() * 2) * choice([1, -1])
+
+ball = vector(0, 0)
+aim = vector(value(), value())
+state = {1: 0, 2: 0}
+
+def move(player, change):
+    "Move player position by change."
+    state[player] += change
+
+def rectangle(x, y, width, height):
+    "Draw rectangle at (x, y) with given width and height."
+    up()
+    goto(x, y)
+    down()
+    begin_fill()
+    for count in range(2):
+        forward(width)
+        left(90)
+        forward(height)
+        left(90)
+    end_fill()
+
+def draw():
+    "Draw game and move pong ball."
+    clear()
+    rectangle(-200, state[1], 10, 50)
+    rectangle(190, state[2], 10, 50)
+
+    ball.move(aim)
+    x = ball.x
+    y = ball.y
+
+    up()
+    goto(x, y)
+    dot(10)
+    update()
+
+    if y < -200 or y > 200:
+        aim.y = -aim.y
+
+    if x < -185:
+        low = state[1]
+        high = state[1] + 50
+
+        if low <= y <= high:
+            aim.x = -aim.x
+        else:
+            return
+
+    if x > 185:
+        low = state[2]
+        high = state[2] + 50
+
+        if low <= y <= high:
+            aim.x = -aim.x
+        else:
+            return
+
+    ontimer(draw, 50)
+
+setup(420, 420, 370, 0)
+hideturtle()
+tracer(False)
+listen()
+onkey(lambda: move(1, 20), 'w')
+onkey(lambda: move(1, -20), 's')
+onkey(lambda: move(2, 20), 'i')
+onkey(lambda: move(2, -20), 'k')
+draw()
+done()
+
+   #### edited code
 //
+
+
 
 ## 박정재
 
