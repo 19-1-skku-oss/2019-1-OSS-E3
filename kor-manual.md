@@ -10,3 +10,6 @@ Free Python Games 는 배우는만큼 즐거움을 얻는 것을 목표로, 2012
 
 각 게임은 다른 게임들과 완전히 독립적이며 학생들과 함께 연습할 수 있는 목록과 함께 코멘트를 포함한다. 창의성과 유연성은 중요하다. 새로운 특징이나 행동을 구현하는 옳고 그른 방법은 없다! 당신은 학생들이 어떤 게임과 가장 잘 어울릴지 결코 알지 못한다.
 
+- Free Python Games : <http://www.grantjenks.com/docs/freegames/>
+- Python.org :  <https://www.python.org/>
+
