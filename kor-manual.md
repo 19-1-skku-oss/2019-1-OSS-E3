@@ -20,16 +20,28 @@ Free Python Games 는 배우는만큼 즐거움을 얻는 것을 목표로, 2012
 
 pip만 있으면 Free Python Games를 설치하는 방법은 간단합니다 - <https://pypi.python.org/pypi/pip>
 
+
   ` $ python3 -m pip install freegames `
+
 
 Free Python Games는 커맨드 라인 인터페이스(CLI)를 지원합니다. CLI에 대한 도움말은 다음과 같이 사용할 수 있습니다:
 
+
   ` $ python3 -m freegames --help`
 
+
 목록에 있는 게임들 중 어떠한 게임도 커맨드 라인에서 Python 모듈을 실행함으로써 즐길 수 있습니다. Python 모듈을 참조하려면, "freegames" 를 게임의 이름과 결합하세요. 예를 들어 "snake" 게임을 실행시키기 위해서는:
+
 
   ` $ python3 -m freegames.snake`
   
 
-  
+게임들은 그것들의 소스코드의 복사를 통하여 수정될 수 있습니다. 복사 명령은 당신이 편집할 수 있는 Python 파일을 당신의 로컬 디렉토리에 만듭니다. 예를 들어, "snake" 게임을 복사하고 실행시키기 위해서는:
+
+
+  `$ python3 -m freegames copy snake`<br>
+  `$ python3 snake.py`
+
+
+
  
