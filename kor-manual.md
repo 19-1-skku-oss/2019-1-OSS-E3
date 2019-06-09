@@ -25,7 +25,11 @@ pip만 있으면 Free Python Games를 설치하는 방법은 간단합니다 - <
 Free Python Games는 커맨드 라인 인터페이스(CLI)를 지원합니다. CLI에 대한 도움말은 다음과 같이 사용할 수 있습니다:
 
   ` $ python3 -m freegames --help`
- 
+
+목록에 있는 게임들 중 어떠한 게임도 커맨드 라인에서 Python 모듈을 실행함으로써 즐길 수 있습니다. Python 모듈을 참조하려면, "freegames" 를 게임의 이름과 결합하세요. 예를 들어 "snake" 게임을 실행시키기 위해서는:
+
+  ` $ python3 -m freegames.snake`
+  
 
   
  
