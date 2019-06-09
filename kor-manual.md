@@ -30,6 +30,12 @@ Free Python Games는 커맨드 라인 인터페이스(CLI)를 지원합니다. C
   ` $ python3 -m freegames --help`
 
 
+CLI는 세 가지 명령을 지원합니다: 목록, 복사, 그리고 보여주기. 실행할 수 있는 모든 게임의 목록을 보기 위해서는:
+
+
+  `$ python3 -m freegames list`
+
+
 목록에 있는 게임들 중 어떠한 게임도 커맨드 라인에서 Python 모듈을 실행함으로써 즐길 수 있습니다. Python 모듈을 참조하려면, "freegames" 를 게임의 이름과 결합하세요. 예를 들어 "snake" 게임을 실행시키기 위해서는:
 
 
