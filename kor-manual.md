@@ -49,5 +49,10 @@ CLI는 세 가지 명령을 지원합니다: 목록, 복사, 그리고 보여주
   `$ python3 snake.py`
 
 
+Python은 Python 코드를 실행할 수 있는 IDLE이라는 이름의 기본 제공 텍스트 편집기를 포함합니다. 편집기를 시작하여 "snake" 게임을 바꾸고 싶다면:
 
- 
+
+  `$ python3 -m idlelib.idle snake.py`
+  
+
+
