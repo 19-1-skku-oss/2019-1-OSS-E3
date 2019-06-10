@@ -68,15 +68,15 @@ Python은 Python 코드를 실행할 수 있는 IDLE이라는 이름의 기본 �
 더 자세한 내용을 원하는 사람들을 위해 이 문서에서는 커리큘럼, API 및 개발에 대해 설명하고 있습니다
 
 
-- Talk: Give the Gift of Python
-- Free Python Games Curriculum
-- Free Python Games API Reference
-- Free Python Games Development
+- Talk: Give the Gift of Python : <http://www.grantjenks.com/docs/freegames/give-gift-python.html>
+- Free Python Games Curriculum : <http://www.grantjenks.com/docs/freegames/curriculum.html>
+- Free Python Games API Reference : <http://www.grantjenks.com/docs/freegames/api.html>
+- Free Python Games Development : <http://www.grantjenks.com/docs/freegames/development.html>
 
 
 ## References
 
-- Free Python Games Documentation
-- Free Python Games at PyPI
-- Free Python Games at GitHub
-- Free Python Games Issue Tracker
+- Free Python Games Documentation : <http://www.grantjenks.com/docs/freegames/>
+- Free Python Games at PyPI : <https://pypi.python.org/pypi/freegames>
+- Free Python Games at GitHub : <https://github.com/grantjenks/free-python-games>
+- Free Python Games Issue Tracker : <https://github.com/grantjenks/free-python-games/issues>
