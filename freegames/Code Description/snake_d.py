@@ -1,12 +1,12 @@
 """snake.py를 한국어로 알기 쉽게 설명하는 파일"""
 
-"""Snake, classic arcade game.                                  #Snake, 클래식 아케이드 게임
+"""Snake, classic arcade game.                                  # Snake, 클래식 아케이드 게임
 
 Excercises                                                      # 연습문제들
 
 1. How do you make the snake faster or slower?                  # 1. snake를 어떻게 하면 빠르거나 느리게 만들 수 있을까?
 2. How can you make the snake go around the edges?              # 2. 어떻게 snake가 가장자리를 돌게 만들 수 있을까?
-3. How would you move the food?                                 # 3. 먹이는 어떻게 움직일 수 있을까?
+3. How would you move the food?                                 # 3. food는 어떻게 움직일 수 있을까?
 4. Change the snake to respond to arrow keys.                   # 4. 방향키에 맞게 snake를 바꾸자
 
 """
@@ -15,8 +15,8 @@ from turtle import *                                            # 터틀 모듈�
 from random import randrange                                    # random 모듈에서 randrange 함수를 불러온다
 from freegames import square, vector                            # freegames utils.py에서 선언된 square와 vector를 불러온다
 
-food = vector(0, 0)                                             # 먹이는 움직이지 않도록 벡터를 (0, 0)으로 설정한다
-snake = [vector(10, 0)]                                         # snake는 길이가 유동적으로 늘어나고 줄어들어야 하므로 리스트형으로 만들고 머리의 벡터를 (10, 0)으로 설정한다
+food = vector(0, 0)                                             # food는 움직이지 않도록 벡터를 (0, 0)으로 설정해준다
+snake = [vector(10, 0)]                                         # snake는 길이가 유동적으로 늘어나고 줄어들어야 하므로 리스트형으로 만들고 머리의 벡터를 (10, 0)으로 설정해준다
 aim = vector(0, -10)                                            # aim은 snake의 방향을 위한 것이고 초기 설정은 벡터에 (0, -10)을 대입해서 아래쪽으로 내려가는 방향이 되도록 한다 
 
 def change(x, y):                                               # snake의 방향을 정하는 change 함수
@@ -40,11 +40,11 @@ def move():                                                     # snake를 움�
 
     snake.append(head)                                          # snake의 리스트에 복사해서 뒤에 추가해준다
 
-    if head == food:
-        print('Snake:', len(snake))
-        food.x = randrange(-15, 15) * 10
+    if head == food:                                            # 만약 head가 food와 만난 경우
+        print('Snake:', len(snake))                             # Snake와 그 길이가 몇 인지 출력하도록 하고
+        food.x = randrange(-15, 15) * 10                        # food.x와 food.y를 다시 지정해준다
         food.y = randrange(-15, 15) * 10
-    else:
+    else:                                                       # head와 food가 만나지 않으면 snake리스트에서 0번째 값을 제거해준다
         snake.pop(0)
 
     clear()
