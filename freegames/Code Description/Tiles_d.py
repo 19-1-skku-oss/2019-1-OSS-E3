@@ -28,7 +28,7 @@ def load():
     "Load tiles and scramble."                          # 타일들을 불러오는 함수
     count = 1
 
-    for y in range(-200, 200, 100):
+    for y in range(-200, 200, 100):                     # 타일 바깥의 윤곽선 그리기
         for x in range(-200, 200, 100):
             mark = vector(x, y)
             tiles[mark] = count
@@ -36,7 +36,7 @@ def load():
 
     tiles[mark] = None
 
-    for count in range(1000):
+    for count in range(1000):                           # 타일 로딩하기
         neighbor = choice(neighbors)
         spot = mark + neighbor
 
@@ -53,18 +53,18 @@ def square(mark, number):
     down()
 
     color('black', 'white')
-    begin_fill()
-    for count in range(4):
+    begin_fill()                                             
+    for count in range(4):                              # 검정 윤곽선 그리기
         forward(99)
         left(90)
     end_fill()
 
-    if number is None:
+    if number is None:                                  # 깔끔한 인터페이스를 위한 그리기 설정
         return
-    elif number < 10:
+    elif number < 10:                                            
         forward(20)
 
-    write(number, font=('Arial', 60, 'normal'))
+    write(number, font=('Arial', 60, 'normal'))         # 글씨 폰트, 크기 설정
 
 def tap(x, y):                                          # 사용자의 입력을 받았을 때의 동작을 설정하는 함수
     "Swap tile and empty square."                       # 빈 정사각형과 타일을 바꾼다.
@@ -72,10 +72,10 @@ def tap(x, y):                                          # 사용자의 입력을
     y = floor(y, 100)
     mark = vector(x, y)
 
-    for neighbor in neighbors:
+    for neighbor in neighbors:                          # 인접 타일 swap을 위한 for문
         spot = mark + neighbor
 
-        if spot in tiles and tiles[spot] is None:       # swap을 위한 코드
+        if spot in tiles and tiles[spot] is None:       # 인접타일이 빈 정사각형일 때 swap
             number = tiles[mark]
             tiles[spot] = number
             square(spot, number)
@@ -88,10 +88,10 @@ def draw():
         square(mark, tiles[mark])
     update()
 
-setup(420, 420, 370, 0)
-hideturtle()
+setup(420, 420, 370, 0)                                 # 인터페이스 크기 설정
+hideturtle()                                            # turtle 숨기기
 tracer(False)
-load()
-draw()
-onscreenclick(tap)
+load()                                                  # 인터페이스 로딩
+draw()                                                  # 타일 그리기
+onscreenclick(tap)                                      # 사용자입력 설정
 done()
