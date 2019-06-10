@@ -19,16 +19,16 @@ food = vector(0, 0)                                             # 먹이는 움�
 snake = [vector(10, 0)]                                         # snake는 길이가 유동적으로 늘어나고 줄어들어야 하므로 리스트형으로 만들고 머리의 벡터를 (10, 0)으로 설정한다
 aim = vector(0, -10)                                            # aim은 snake의 방향을 위한 것이고 초기 설정은 벡터에 (0, -10)을 대입해서 아래쪽으로 내려가는 방향이 되도록 한다 
 
-def change(x, y):
-    "Change snake direction."
+def change(x, y):                                               # snake의 방향을 정하는 change 함수
+    "Change snake direction."                                   # aim vector의 x값과 y값 재설정 해준다    
     aim.x = x
     aim.y = y
 
-def inside(head):
-    "Return True if head inside boundaries."
+def inside(head):                                               # snake의 head의 범위를 제한해주는 inside 함수
+    "Return True if head inside boundaries."                    # head의 x와 y좌표 모두 (-200, 100) 사이에 있게 한다
     return -200 < head.x < 190 and -200 < head.y < 190
 
-def move():
+def move():                                                     # snake를 움직이는 move 함수
     "Move snake forward one segment."
     head = snake[-1].copy()
     head.move(aim)
