@@ -33,7 +33,7 @@ Travis CI and AppVeyor CI
 - Travis CI와 AppVeyor CI를 사용하여 검증했다
 
 
-!(https://api.travis-ci.org/grantjenks/free-python-games.svg?branch=master)
+![](https://api.travis-ci.org/grantjenks/free-python-games.svg?branch=master)
 
 
 ## QuickStart
