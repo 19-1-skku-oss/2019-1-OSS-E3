@@ -89,7 +89,7 @@ help function:
 ## Our Roles
 
 
-- 박정재 : README.md 수정, snake.py 코드수정, kor-manual.md 번역, 여러가지 코드 피드백
+- 박정재 : README.md 수정, kor-manual.md 번역, snake.py 코드수정, 여러 코드 Description
 - 유재원 : gh-page 편집, flappy.py 코드수정, 
 
 
