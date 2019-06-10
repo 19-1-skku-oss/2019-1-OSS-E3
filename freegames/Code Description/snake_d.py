@@ -33,12 +33,12 @@ def move():                                                     # snake를 움�
     head = snake[-1].copy()                                     # snake의 리스트에 복사해서 뒤에 추가해준다
     head.move(aim)                                              # head를 aim의 vector를 이용해서 움직여준다
 
-    if not inside(head) or head in snake:
-        square(head.x, head.y, 9, 'red')
-        update()
+    if not inside(head) or head in snake:                       # head가 범위를 벗어나거나 head가 snake의 몸통과 부딫힐 경우
+        square(head.x, head.y, 9, 'red')                        # 길이가 9인 정사각형을 왼쪽 아래 꼭지점이 (head.x, head.y)가 되도록 또한 빨간색으로 채워지도록 한다
+        update()                                                # snake 리스트를 갱신하고 if 문에 들어온 경우 함수를 종료시킨다
         return
 
-    snake.append(head)
+    snake.append(head)                                          
 
     if head == food:
         print('Snake:', len(snake))
