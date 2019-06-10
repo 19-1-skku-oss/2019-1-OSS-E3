@@ -22,57 +22,9 @@ comments: true
  <br>
  
 ## **김민수**
-### *Maze*
-
-#### original code
-
-    """
-    Maze, move from one side to another.
-    Excercises
-    1. Keep score by counting taps.
-    2. Make the maze harder.
-    3. Generate the same maze twice.
-    """
-
-    from turtle import *
-    from random import random
-    from freegames import line
-    
-    def draw():
-    "Draw maze."
-    color('black')
-    width(5)
-    for x in range(-200, 200, 40):
-        for y in range(-200, 200, 40):
-            if random() > 0.5:
-                line(x, y, x + 40, y + 40)
-            else:
-                line(x, y + 40, x + 40, y)
-
-    update()
-
-    def tap(x, y):
-    "Draw line and dot for screen tap."
-    if abs(x) > 198 or abs(y) > 198:
-        up()
-    else:
-        down()
-
-    width(2)
-    color('red')
-    goto(x, y)
-    dot(4)
-
-    setup(420, 420, 370, 0)
-    hideturtle()
-    tracer(False)
-    draw()
-    onscreenclick(tap)
-    done()
 
 #### 코드에 대한 소개 추가
 
-### *pong*
 [**Pong**](http://www.grantjenks.com/docs/freegames/pong.html)
 -----
 `Pong` classic arcade game. Use the keyboard to move your paddle up and
@@ -272,7 +224,7 @@ down. The first player to miss the ball loses.
  <br>
 
 ## **박정재**
-### *Snake*
+
 [**Snake**](http://www.grantjenks.com/docs/freegames/snake.html)
 -----
 `Snake` classic arcade game. Use the arrow keys to navigate and eat the
@@ -486,7 +438,7 @@ longer. Avoid eating yourself or going out of bounds!
  <br>
 
 ## **유재원**
-### *Flappy*
+
 [**Flappy**](http://www.grantjenks.com/docs/freegames/flappy.html)
 -----
 `Flappy` Flappy-bird inspired game. Click the screen to flap your
@@ -656,7 +608,7 @@ wings. Watch out for black ravens as you fly across the screen.
  <br>
 
 ## **이재웅**
-### *Tiles*
+
 [**Tiles**](http://www.grantjenks.com/docs/freegames/tiles.html)
 -----
 `Tiles` puzzle game of sliding numbers into place. Click a tile adjacent to
