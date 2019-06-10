@@ -18,8 +18,10 @@ comments: true
 <center><b>Moon</b> is a minimal, one column jekyll theme.</center>
  
  이 프로젝트 페이지는 저희가 **수정** 혹은 **기여**한 파이썬 코드들을 정리한 곳입니다. 
-      
-## 김민수
+ <br>
+ <br>
+ 
+## **김민수**
 ### *Maze*
 
 #### original code
@@ -263,9 +265,10 @@ comments: true
 
     
 
+ <br>
+ <br>
 
-
-## 박정재
+## **박정재**
 ### *Snake*
 
 #### original code
@@ -469,9 +472,10 @@ comments: true
     done()
 
 
+ <br>
+ <br>
 
-
-## 유재원
+## **유재원**
 ### *Flappy*
 
 #### original code
@@ -631,9 +635,10 @@ comments: true
     done()
 
 
+ <br>
+ <br>
 
-
-## 이재웅
+## **이재웅**
 ### *Tiles*
 
 #### original code
@@ -827,7 +832,8 @@ comments: true
     onscreenclick(tap)                                      # 사용자입력 설정
     done()
 
-
+ <br>
+ <br>
      
 That's all.
 
