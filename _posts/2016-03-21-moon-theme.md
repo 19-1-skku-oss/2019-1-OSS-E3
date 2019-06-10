@@ -475,6 +475,359 @@ comments: true
 ### *Flappy*
 
 #### original code
+
+    """Flappy, game inspired by Flappy Bird.
+    Exercises
+    1. Keep score.
+    2. Vary the speed.
+    3. Vary the size of the balls.
+    4. Allow the bird to move forward and back.
+    """
+    
+    from random import *
+    from turtle import *
+    from freegames import vector
+    
+    bird = vector(0, 0)
+    balls = []
+    
+    def tap(x, y):
+        "Move bird up in response to screen tap."
+        up = vector(0, 30)
+        bird.move(up)
+    
+    def inside(point):
+        "Return True if point on screen."
+        return -200 < point.x < 200 and -200 < point.y < 200
+    
+    def draw(alive):
+        "Draw screen objects."
+        clear()
+    
+       goto(bird.x, bird.y)
+    
+      if alive:
+           dot(10, 'green')
+       else:
+           dot(10, 'red')
+    
+       for ball in balls:
+          goto(ball.x, ball.y)
+          dot(20, 'black')
+    
+       update()
+    
+    def move():
+        "Update object positions."
+       bird.y -= 5
+    
+        for ball in balls:
+            ball.x -= 3
+    
+       if randrange(10) == 0:
+           y = randrange(-199, 199)
+           ball = vector(199, y)
+           balls.append(ball)
+    
+        while len(balls) > 0 and not inside(balls[0]):
+            balls.pop(0)
+    
+        if not inside(bird):
+            draw(False)
+            return
+    
+        for ball in balls:
+           if abs(ball - bird) < 15:
+               draw(False)
+              return
+    
+       draw(True)
+        ontimer(move, 50)
+
+    setup(420, 420, 370, 0)
+    hideturtle()
+    up()
+    tracer(False)
+    onscreenclick(tap)
+    move()
+    done()
+
+#### 코드에 대한 소개 추가
+
+    """Flappy, game inspired by Flappy Bird.
+    Exercises                                                 #연습문제 
+    1. Keep score.                                     #1. 점수를 계속 보여주게 하자 
+    2. Vary the speed.                                 #2. 속도를 다양하게 해보자    
+    3. Vary the size of the balls.                     #3. 공의 크기를 다양하게 해보자  
+    4. Allow the bird to move forward and back.        #4. 새가 앞 뒤로 움직일 수 있게 해보자 
+    """
+    
+    from random import *
+    from turtle import *
+    from freegames import vector
+    
+    bird = vector(0, 0)                                          #새의 위치 초기 설정 
+    balls = []
+    
+    def tap(x, y):                                    #새의 위치를 위로 이동시키는 함수 
+        "Move bird up in response to screen tap."
+        up = vector(0, 30)
+        bird.move(up)
+    
+    def inside(point):                                #점이 스크린에 있으면 참을 반환 
+        "Return True if point on screen."
+        return -200 < point.x < 200 and -200 < point.y < 200
+    
+    def draw(alive):                                 #새의 생사에 따라 색깔 변경
+        "Draw screen objects."
+        clear()
+    
+        goto(bird.x, bird.y)
+    
+        if alive:
+            dot(10, 'green')
+        else:
+           dot(10, 'red')
+    
+        for ball in balls:
+            goto(ball.x, ball.y)
+            dot(20, 'black')
+    
+       update()
+    
+    def move():                                     #공의 위치를 업데이트해주는 함수 
+        "Update object positions."
+        bird.y -= 5
+    
+       for ball in balls:                          #공의 위치를 왼쪽으로 이동 
+          ball.x -= 3
+    
+        if randrange(10) == 0:                       #화면 왼쪽끝에 다다르면 오른쪽 끝으로 이동 
+            y = randrange(-199, 199)
+            ball = vector(199, y)
+            balls.append(ball)
+    
+        while len(balls) > 0 and not inside(balls[0]):        
+            balls.pop(0)
+    
+        if not inside(bird):
+          draw(False)
+           return
+    
+        for ball in balls:
+           if abs(ball - bird) < 15:
+               draw(False)
+              return
+    
+       draw(True)
+        ontimer(move, 50)
+
+    setup(420, 420, 370, 0) 
+    hideturtle()
+    up()
+    tracer(False)
+    onscreenclick(tap)
+    move()
+    done()
+
+
+
+
+## 이재웅
+### *Tiles*
+
+#### original code
+
+    """Tiles, number swapping game.
+    Exercises
+    1. Track a score by the number of tile moves.
+    2. Permit diagonal squares as neighbors.
+    3. Respond to arrow keys instead of mouse clicks.
+    4. Make the grid bigger.
+    """
+    
+    from random import *
+    from turtle import *
+    from freegames import floor, vector
+    
+    tiles = {}
+    neighbors = [
+        vector(100, 0),
+        vector(-100, 0),
+       vector(0, 100),
+       vector(0, -100),
+    ]
+    
+    def load():
+     "Load tiles and scramble."
+     count = 1
+    
+      for y in range(-200, 200, 100):
+         for x in range(-200, 200, 100):
+             mark = vector(x, y)
+             tiles[mark] = count
+             count += 1
+    
+     tiles[mark] = None
+    
+      for count in range(1000):
+            neighbor = choice(neighbors)
+           spot = mark + neighbor
+    
+            if spot in tiles:
+                number = tiles[spot]
+             tiles[spot] = None
+             tiles[mark] = number
+             mark = spot
+    
+    def square(mark, number):
+       "Draw white square with black outline and number."
+       up()
+       goto(mark.x, mark.y)
+       down()
+    
+       color('black', 'white')
+       begin_fill()
+       for count in range(4):
+            forward(99)
+            left(90)
+      end_fill()
+    
+      if number is None:
+          return
+      elif number < 10:
+          forward(20)
+    
+      write(number, font=('Arial', 60, 'normal'))
+    
+    def tap(x, y):
+        "Swap tile and empty square."
+        x = floor(x, 100)
+        y = floor(y, 100)
+       mark = vector(x, y)
+    
+      for neighbor in neighbors:
+          spot = mark + neighbor
+    
+          if spot in tiles and tiles[spot] is None:
+              number = tiles[mark]
+              tiles[spot] = number
+              square(spot, number)
+             tiles[mark] = None
+              square(mark, None)
+
+    def draw():
+      "Draw all tiles."
+       for mark in tiles:
+           square(mark, tiles[mark])
+        update()
+    
+    setup(420, 420, 370, 0)
+    hideturtle()
+    tracer(False)
+    load()
+    draw()
+    onscreenclick(tap)
+    done()
+
+#### 코드에 대한 소개 추가
+
+    """Tiles.py를 한국어로 알기 쉽게 설명하는 파일"""            
+        
+        
+    """Tiles, number swapping game                          # Tiles, 숫자바꾸기 게임
+    Exercises                                               # 연습문제
+    1. Track a score by the number of tile moves.           # 1. 타일 이동 횟수로 점수를 획득합니다.
+    2. Permit diagonal squares as neighbors.                # 2. 대각선을 이동을 허용하십시오.
+    3. Respond to arrow keys instead of mouse clicks.       # 3. 마우스 클릭 대신 화살표 키를 이용해보세요.
+    4. Make the grid bigger.                                # 4. 숫자판과 사용자 인터페이스를 더 크게 만듭니다.
+    """
+    
+    from random import *                                    # random 모듈을 불러온다        
+    from turtle import *                                    # turtle 모듈을 불러온다
+    from freegames import floor, vector                     # freegames 모듈에서 floor, vector함수를 불러온다.
+    
+    tiles = {}                                              # 타일들을 위한 배열 선언
+    neighbors = [                                           # 인접 타일 관리를 위한 배열 선언
+        vector(100, 0),                                     # 오른쪽 인접 타일
+        vector(-100, 0),                                    # 왼쪽 인접 타일
+        vector(0, 100),                                     # 위쪽 인접 타일
+        vector(0, -100),                                    # 아래쪽 인접 타일
+    ]
+    
+    def load():                                             
+       "Load tiles and scramble."                          # 타일들을 불러오는 함수
+        count = 1
+    
+        for y in range(-200, 200, 100):                     # 타일 바깥의 윤곽선 그리기
+            for x in range(-200, 200, 100):
+                mark = vector(x, y)
+                tiles[mark] = count
+                count += 1
+    
+        tiles[mark] = None                                  # 빈 타일 표시
+    
+        for count in range(1000):                           # 타일 로딩하기
+            neighbor = choice(neighbors)
+            spot = mark + neighbor
+    
+            if spot in tiles:
+              number = tiles[spot]
+              tiles[spot] = None
+               tiles[mark] = number
+               mark = spot
+    
+    def square(mark, number):
+        "Draw white square with black outline and number."  # 흰색 정사각형과 검정 윤곽선을 그린다.
+        up()
+        goto(mark.x, mark.y)
+       down()
+    
+       color('black', 'white')
+        begin_fill()                                             
+        for count in range(4):                              # 검정 윤곽선 그리기
+           forward(99)
+           left(90)
+       end_fill()
+    
+       if number is None:                                  # 깔끔한 인터페이스를 위한 그리기 설정
+          return
+      elif number < 10:                                            
+          forward(20)
+    
+       write(number, font=('Arial', 60, 'normal'))         # 글씨 폰트, 크기 설정
+    
+    def tap(x, y):                                          # 사용자의 입력을 받았을 때의 동작을 설정하는 함수
+        "Swap tile and empty square."                       # 빈 정사각형과 타일을 바꾼다.
+        x = floor(x, 100)
+        y = floor(y, 100)
+        mark = vector(x, y)
+    
+        for neighbor in neighbors:                          # 인접 타일 swap을 위한 for문
+            spot = mark + neighbor
+    
+          if spot in tiles and tiles[spot] is None:       # 인접타일이 빈 정사각형일 때 swap
+             number = tiles[mark]
+             tiles[spot] = number
+              square(spot, number)
+              tiles[mark] = None
+              square(mark, None)
+    
+    def draw():                                             
+        "Draw all tiles."                                   # 모든 타일을 그린다.
+        for mark in tiles:                                  
+            square(mark, tiles[mark])
+        update()
+    
+    setup(420, 420, 370, 0)                                 # 인터페이스 크기 설정
+    hideturtle()                                            # turtle 숨기기
+    tracer(False)
+    load()                                                  # 인터페이스 로딩
+    draw()                                                  # 타일 그리기
+    onscreenclick(tap)                                      # 사용자입력 설정
+    done()
+
+
      
 That's all.
 
