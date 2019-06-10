@@ -21,6 +21,7 @@ comments: true
       
 ## 김민수
 ### *Maze*
+
 #### <original code>
 
  """Maze, move from one side to another.
@@ -30,10 +31,10 @@ Excercises
 3. Generate the same maze twice.
 """
 
-from turtle import *
-from random import random
-from freegames import line
-
+    from turtle import *
+    from random import random
+    from freegames import line
+    
     def draw():
     "Draw maze."
     color('black')
@@ -69,8 +70,8 @@ from freegames import line
 #### <edited code>
 
 
+
 ### *pong*
-  
 #### <original code>
   
 """Pong, classic arcade game.
@@ -83,6 +84,7 @@ Exercises
 6. How would you add a computer player?
 6. Add a second ball.
 """
+    
     from random import choice, random
     from turtle import *
     from freegames import vector
