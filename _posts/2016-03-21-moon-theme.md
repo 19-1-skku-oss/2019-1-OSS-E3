@@ -20,10 +20,9 @@ comments: true
  이 프로젝트 페이지는 저희가 **수정** 혹은 **기여**한 파이썬 코드들을 정리한 곳입니다. 
       
 ## 김민수
-
 ### *Maze*
-  
 #### <original code>
+
  """Maze, move from one side to another.
 Excercises
 1. Keep score by counting taps.
@@ -39,7 +38,6 @@ from freegames import line
     "Draw maze."
     color('black')
     width(5)
-
     for x in range(-200, 200, 40):
         for y in range(-200, 200, 40):
             if random() > 0.5:
