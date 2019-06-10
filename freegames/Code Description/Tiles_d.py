@@ -61,7 +61,7 @@ def square(mark, number):
 
     if number is None:                                  # 깔끔한 인터페이스를 위한 그리기 설정
         return
-    elif number < 10:                                            
+    elif number < 10:                                   # 숫자가 한자리 수 일 때의 인터페이스 관리         
         forward(20)
 
     write(number, font=('Arial', 60, 'normal'))         # 글씨 폰트, 크기 설정
