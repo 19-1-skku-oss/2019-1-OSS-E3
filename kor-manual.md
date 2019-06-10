@@ -34,6 +34,7 @@ Travis CI and AppVeyor CI
 
 
 [![](https://api.travis-ci.org/grantjenks/free-python-games.svg?branch=master)](http://www.grantjenks.com/docs/freegames/)
+[![](https://ci.appveyor.com/api/projects/status/github/grantjenks/free-python-games?branch=master&svg=true)](http://www.grantjenks.com/docs/freegames/)
 
 
 ## QuickStart
