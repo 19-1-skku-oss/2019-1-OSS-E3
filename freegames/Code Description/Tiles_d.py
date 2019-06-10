@@ -1,4 +1,4 @@
-"""snake.py를 한국어로 알기 쉽게 설명하는 파일"""            
+"""Tiles.py를 한국어로 알기 쉽게 설명하는 파일"""            
 
 
 """Tiles, number swapping game                          # Tiles, 숫자바꾸기 게임
