@@ -88,5 +88,13 @@ help function:
 
 ## Our Roles
 
+
 - 박정재 : README.md 수정, snake.py 코드수정, kor-manual.md 번역, 여러가지 코드 피드백
 - 유재원 : gh-page 편집, flappy.py 코드수정, 
+
+
+## Original Project Pages
+
+
+- GitHub : <https://github.com/grantjenks/free-python-games>
+- Documentation : <http://www.grantjenks.com/docs/freegames/>
