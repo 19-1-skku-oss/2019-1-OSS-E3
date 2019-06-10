@@ -30,8 +30,8 @@ def inside(head):                                               # snake의 head�
 
 def move():                                                     # snake를 움직이는 move 함수
     "Move snake forward one segment."
-    head = snake[-1].copy()
-    head.move(aim)
+    head = snake[-1].copy()                                     # snake의 리스트에 복사해서 뒤에 추가해준다
+    head.move(aim)                                              # head를 aim의 vector를 이용해서 움직여준다
 
     if not inside(head) or head in snake:
         square(head.x, head.y, 9, 'red')
