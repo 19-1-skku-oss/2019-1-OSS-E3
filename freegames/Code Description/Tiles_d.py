@@ -3,7 +3,7 @@
 
 """Tiles, number swapping game                          # Tiles, 숫자바꾸기 게임
 
-Exercises                                               # 연습문제들
+Exercises                                               # 연습문제
 
 1. Track a score by the number of tile moves.           # 1. 타일 이동 횟수로 점수를 획득합니다.
 2. Permit diagonal squares as neighbors.                # 2. 대각선을 이동을 허용하십시오.
@@ -16,16 +16,16 @@ from random import *                                    # random 모듈을 불�
 from turtle import *                                    # turtle 모듈을 불러온다
 from freegames import floor, vector                     # freegames 모듈에서 floor, vector함수를 불러온다.
 
-tiles = {}
-neighbors = [
-    vector(100, 0),
-    vector(-100, 0),
-    vector(0, 100),
-    vector(0, -100),
+tiles = {}                                              # 타일들을 위한 배열 선언
+neighbors = [                                           # 인접 타일 관리를 위한 배열 선언
+    vector(100, 0),                                     # 오른쪽 인접 타일
+    vector(-100, 0),                                    # 왼쪽 인접 타일
+    vector(0, 100),                                     # 위쪽 인접 타일
+    vector(0, -100),                                    # 아래쪽 인접 타일
 ]
 
-def load():
-    "Load tiles and scramble."
+def load():                                             
+    "Load tiles and scramble."                          # 타일들을 불러오는 함수
     count = 1
 
     for y in range(-200, 200, 100):
@@ -47,7 +47,7 @@ def load():
             mark = spot
 
 def square(mark, number):
-    "Draw white square with black outline and number."
+    "Draw white square with black outline and number."  # 흰색 정사각형과 검정 윤곽선을 그린다.
     up()
     goto(mark.x, mark.y)
     down()
@@ -66,8 +66,8 @@ def square(mark, number):
 
     write(number, font=('Arial', 60, 'normal'))
 
-def tap(x, y):
-    "Swap tile and empty square."
+def tap(x, y):                                          # 사용자의 입력을 받았을 때의 동작을 설정하는 함수
+    "Swap tile and empty square."                       # 빈 정사각형과 타일을 바꾼다.
     x = floor(x, 100)
     y = floor(y, 100)
     mark = vector(x, y)
@@ -75,16 +75,16 @@ def tap(x, y):
     for neighbor in neighbors:
         spot = mark + neighbor
 
-        if spot in tiles and tiles[spot] is None:
+        if spot in tiles and tiles[spot] is None:       # swap을 위한 코드
             number = tiles[mark]
             tiles[spot] = number
             square(spot, number)
             tiles[mark] = None
             square(mark, None)
 
-def draw():
-    "Draw all tiles."
-    for mark in tiles:
+def draw():                                             
+    "Draw all tiles."                                   # 모든 타일을 그린다.
+    for mark in tiles:                                  
         square(mark, tiles[mark])
     update()
 
