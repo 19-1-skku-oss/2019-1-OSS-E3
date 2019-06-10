@@ -13,11 +13,11 @@ Excercises                                                      # 연습문제�
 
 from turtle import *                                            # 터틀 모듈을 불러온다
 from random import randrange                                    # random 모듈에서 randrange 함수를 불러온다
-from freegames import square, vector                            # freegames init함수에서 선언된 square와 vector를 불러온다
+from freegames import square, vector                            # freegames utils.py에서 선언된 square와 vector를 불러온다
 
-food = vector(0, 0)
-snake = [vector(10, 0)]
-aim = vector(0, -10)
+food = vector(0, 0)                                             # 먹이는 움직이지 않도록 벡터를 (0, 0)으로 설정한다
+snake = [vector(10, 0)]                                         # snake는 길이가 유동적으로 늘어나고 줄어들어야 하므로 리스트형으로 만들고 머리의 벡터를 (10, 0)으로 설정한다
+aim = vector(0, -10)                                            # aim은 snake의 방향을 위한 것이고 초기 설정은 벡터에 (0, -10)을 대입해서 아래쪽으로 내려가는 방향이 되도록 한다 
 
 def change(x, y):
     "Change snake direction."
