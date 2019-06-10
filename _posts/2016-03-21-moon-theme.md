@@ -24,12 +24,11 @@ comments: true
 
 #### <original code>
 
- """Maze, move from one side to another.
-Excercises
-1. Keep score by counting taps.
-2. Make the maze harder.
-3. Generate the same maze twice.
-"""
+    Maze, move from one side to another.
+    Excercises
+    1. Keep score by counting taps.
+    2. Make the maze harder.
+    3. Generate the same maze twice.
 
     from turtle import *
     from random import random
