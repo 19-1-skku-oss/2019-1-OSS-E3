@@ -11,9 +11,9 @@ Excercises                                                      # 연습문제�
 
 """
 
-from turtle import *
-from random import randrange
-from freegames import square, vector
+from turtle import *                                            # 터틀 모듈을 불러온다
+from random import randrange                                    # random 모듈에서 randrange 함수를 불러온다
+from freegames import square, vector                            # freegames init함수에서 선언된 square와 vector를 불러온다
 
 food = vector(0, 0)
 snake = [vector(10, 0)]
