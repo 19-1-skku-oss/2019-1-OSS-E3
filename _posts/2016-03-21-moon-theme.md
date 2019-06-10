@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "각자 기여할 게임들"
+title:  "Various Games"
 date:   2019-06-09
 excerpt: "python games."
 project: true
