@@ -8,7 +8,7 @@ Exercises                                               # 연습문제
 1. Track a score by the number of tile moves.           # 1. 타일 이동 횟수로 점수를 획득합니다.
 2. Permit diagonal squares as neighbors.                # 2. 대각선을 이동을 허용하십시오.
 3. Respond to arrow keys instead of mouse clicks.       # 3. 마우스 클릭 대신 화살표 키를 이용해보세요.
-4. Make the grid bigger.                                # 4. 숫자판를 더 크게 만듭니다.
+4. Make the grid bigger.                                # 4. 숫자판과 사용자 인터페이스를 더 크게 만듭니다.
 
 """
 
@@ -34,7 +34,7 @@ def load():
             tiles[mark] = count
             count += 1
 
-    tiles[mark] = None
+    tiles[mark] = None                                  # 빈 타일 표시
 
     for count in range(1000):                           # 타일 로딩하기
         neighbor = choice(neighbors)
