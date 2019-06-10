@@ -72,11 +72,14 @@ comments: true
 
 #### 코드에 대한 소개 추가
 
-    
-
-
-
 ### *pong*
+[**Pong**](http://www.grantjenks.com/docs/freegames/pong.html)
+-----
+`Pong` classic arcade game. Use the keyboard to move your paddle up and
+down. The first player to miss the ball loses.
+
+![pong](http://www.grantjenks.com/docs/freegames/_static/pong.gif)
+<br>
 #### <original code>
   
     """Pong, classic arcade game.
@@ -270,7 +273,14 @@ comments: true
 
 ## **박정재**
 ### *Snake*
+[**Snake**](http://www.grantjenks.com/docs/freegames/snake.html)
+-----
+`Snake` classic arcade game. Use the arrow keys to navigate and eat the
+green food. Each time the food is consumed, the snake grows one segment
+longer. Avoid eating yourself or going out of bounds!
 
+![snake](http://www.grantjenks.com/docs/freegames/_static/snake.gif)
+<br>
 #### original code
     
     """Snake, classic arcade game.
@@ -477,6 +487,13 @@ comments: true
 
 ## **유재원**
 ### *Flappy*
+[**Flappy**](http://www.grantjenks.com/docs/freegames/flappy.html)
+-----
+`Flappy` Flappy-bird inspired game. Click the screen to flap your
+wings. Watch out for black ravens as you fly across the screen.
+
+![Flappy](http://www.grantjenks.com/docs/freegames/_static/flappy.gif)
+<br>
 
 #### original code
 
@@ -640,7 +657,14 @@ comments: true
 
 ## **이재웅**
 ### *Tiles*
+[**Tiles**](http://www.grantjenks.com/docs/freegames/tiles.html)
+-----
+`Tiles` puzzle game of sliding numbers into place. Click a tile adjacent to
+the empty square to swap positions. Can you make the tiles count one to fifteen
+from left to right and bottom to top?
 
+![Tiles](http://www.grantjenks.com/docs/freegames/_static/tiles.gif)
+<br>
 #### original code
 
     """Tiles, number swapping game.
