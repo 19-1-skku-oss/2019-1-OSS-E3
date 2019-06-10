@@ -21,8 +21,9 @@ comments: true
       
 ## 김민수
 
- ### Maze
-  #### original code
+### *Maze*
+  
+#### <original code>
  """Maze, move from one side to another.
 Excercises
 1. Keep score by counting taps.
@@ -67,12 +68,12 @@ draw()
 onscreenclick(tap)
 done()
 
-   #### edited code
-//
+#### <edited code>
 
 
- ### *pong*
-  #### original code
+### *pong*
+  
+#### <original code>
   
 """Pong, classic arcade game.
 Exercises
@@ -163,8 +164,8 @@ onkey(lambda: move(2, -20), 'k')
 draw()
 done()
 
-   #### edited code
-//
+#### edited code
+
 
 
 
