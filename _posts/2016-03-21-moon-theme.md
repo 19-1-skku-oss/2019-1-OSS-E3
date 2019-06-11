@@ -13,9 +13,9 @@ tag:
 comments: true
 ---
 
-![Moon Homepage](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
+![game](http://pluspng.com/img-png/game-png-black-and-white-game-controller-icon-a-controller-icon-is-a-u-shaped-object-because-the-top-and-png-50-px-1600.png)    
     
-<center><b>Moon</b> is a minimal, one column jekyll theme.</center>
+<center><b>Free python games</b> for amateur programmers.</center>
  
  이 프로젝트 페이지는 저희가 **수정** 혹은 **기여**한 파이썬 코드들을 정리한 곳입니다. 
  <br>
