@@ -16,7 +16,7 @@ Free Python Games 는 배우는만큼 즐거움을 얻는 것을 목표로, 2012
 - Python.org :  <https://www.python.org/>
 
 
-## Features
+## 특정
 
 
 - 플레이하는게 재미있습니다.
@@ -36,7 +36,7 @@ Free Python Games 는 배우는만큼 즐거움을 얻는 것을 목표로, 2012
 [![](https://ci.appveyor.com/api/projects/status/github/grantjenks/free-python-games?branch=master&svg=true)](http://www.grantjenks.com/docs/freegames/)
 
 
-## QuickStart
+## 실행방법
 
 
 pip만 있으면 Free Python Games를 설치하는 방법은 간단합니다 - <https://pypi.python.org/pypi/pip>
@@ -83,7 +83,7 @@ Python은 Python 코드를 실행할 수 있는 IDLE이라는 이름의 기본 �
   `>>> help(freegames)`
   
 
-## UserGuide
+## 가이드
 
 
 더 자세한 내용을 원하는 사람들을 위해 이 문서에서는 커리큘럼, API 및 개발에 대해 설명하고 있습니다
@@ -95,7 +95,7 @@ Python은 Python 코드를 실행할 수 있는 IDLE이라는 이름의 기본 �
 - Free Python Games Development : <http://www.grantjenks.com/docs/freegames/development.html>
 
 
-## References
+## 참조
 
 - Free Python Games Documentation : <http://www.grantjenks.com/docs/freegames/>
 - Free Python Games at PyPI : <https://pypi.python.org/pypi/freegames>
