@@ -64,9 +64,9 @@ def store(key, value):                                          # dictionary 자
     state[key] = value
 
 state = {'start': None, 'shape': line}                          # dictionary 자료형인 state변수를 만들어준다
-setup(420, 420, 370, 0)                                         
-onscreenclick(tap)
-listen()
+setup(420, 420, 370, 0)                                         # 초기 그래픽 설정을 해준다
+onscreenclick(tap)                                              # 사용자가 화면을 클릭했을 때 tap함수를 실행시켜준다 
+listen()                                                        # 사용자가 입력하는 키의 입력을 받아준다
 onkey(undo, 'u')
 onkey(lambda: color('black'), 'K')
 onkey(lambda: color('white'), 'W')
