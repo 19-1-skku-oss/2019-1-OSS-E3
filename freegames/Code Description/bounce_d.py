@@ -23,14 +23,14 @@ def value():                                                    # (-5, -3) 그�
 ball = vector(0, 0)                                             # 공의 초기 좌표를 (0, 0)으로 설정해준다
 aim = vector(value(), value())                                  # aim의 초기 좌표는 value 함수에서 구한 랜덤 값을 각각 x좌표와 y좌표에 넣어준다
 
-def draw():
+def draw():                                                     # 공을 움직여주고 그 화면을 나타내주는 함수
     "Move ball and draw game."
-    ball.move(aim)
+    ball.move(aim)                                              # 공을 aim에 설정되있는 좌표만큼 움직여준다
 
-    x = ball.x
+    x = ball.x                                                  # x와 y를 ball.x와 ball.y 값으로 설정해준다    
     y = ball.y
 
-    if x < -200 or x > 200:
+    if x < -200 or x > 200:                                     # 만약 x가 -200보다 작거나 200보다 크면 aim의 x좌표의 부호를 바꿔준다        
         aim.x = -aim.x
 
     if y < -200 or y > 200:
