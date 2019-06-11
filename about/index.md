@@ -6,7 +6,8 @@ date: 2019-06-06
 comments: false
 ---
     
-<center>Free Python Games are written in simple Python code and designed for experimentation and changes. Our project is to comment out and code review to make it easy for Python beginners to edit the game.</center>
+<center>Free Python Games are written in simple Python code, designed for experimentation and changes. 
+    Our project is to comment out and code review to make it easy for Python beginners to edit the game.</center>
 
 ## 2019-1-OSS-E3 Team Members
 
