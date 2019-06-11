@@ -16,12 +16,12 @@ from random import *                                            # random 모듈�
 from turtle import *                                            # turtle 모듈을 불러온다
 from freegames import vector                                    # freegames utils.py에서 선언된 vector를 불러온다
 
-def value():
+def value():                                                    # (-5, -3) 그리고 (3, 5) 사이에만 있는 랜덤한 수를 생성하는 함수
     "Randomly generate value between (-5, -3) or (3, 5)."
     return (3 + random() * 2) * choice([1, -1])
 
-ball = vector(0, 0)
-aim = vector(value(), value())
+ball = vector(0, 0)                                             # 공의 초기 좌표를 (0, 0)으로 설정해준다
+aim = vector(value(), value())                                  # aim의 초기 좌표는 value 함수에서 구한 랜덤 값을 각각 x좌표와 y좌표에 넣어준다
 
 def draw():
     "Move ball and draw game."
