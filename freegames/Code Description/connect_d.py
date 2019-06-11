@@ -19,7 +19,7 @@ turns = {'red': 'yellow', 'yellow': 'red'}                          # 색깔 바
 state = {'player': 'yellow', 'rows': [0] * 8}                       # 현재 플레이어의 색 상태 표시
 
 def grid():                                         
-    "Draw Connect Four grid."                                       # 
+    "Draw Connect Four grid."                                       # 배경이 되는 판 그리기 함수
     bgcolor('light blue')                                           # 배경색 설정
 
     for x in range(-150, 200, 50):                                  #
@@ -33,7 +33,7 @@ def grid():
 
     update()
 
-def tap(x, y):
+def tap(x, y):                                                      # 사용자에게 입력받았을 때의 동작 
     "Draw red or yellow circle in tapped row."                      #
     player = state['player']
     rows = state['rows']
