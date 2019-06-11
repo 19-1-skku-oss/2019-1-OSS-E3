@@ -15,11 +15,11 @@
 from turtle import *                                                # turrtle 모듈을 불러온다    
 from freegames import line                                          # freegames 모듈에서 line함수를 불러온다            
 
-turns = {'red': 'yellow', 'yellow': 'red'}
-state = {'player': 'yellow', 'rows': [0] * 8}
+turns = {'red': 'yellow', 'yellow': 'red'}                          # 색깔 바꾸기를 위한 색 선언
+state = {'player': 'yellow', 'rows': [0] * 8}                       # 현재 플레이어의 색 상태 표시
 
-def grid():
-    "Draw Connect Four grid."
+def grid():                                         
+    "Draw Connect Four grid."                                       # 
     bgcolor('light blue')
 
     for x in range(-150, 200, 50):
