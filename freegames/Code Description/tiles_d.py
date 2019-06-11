@@ -90,7 +90,7 @@ def draw():
 
 setup(420, 420, 370, 0)                                 # 인터페이스 크기 설정
 hideturtle()                                            # turtle 숨기기
-tracer(False)
+tracer(False)                                           # 그리기 
 load()                                                  # 인터페이스 로딩
 draw()                                                  # 타일 그리기
 onscreenclick(tap)                                      # 사용자입력 설정
