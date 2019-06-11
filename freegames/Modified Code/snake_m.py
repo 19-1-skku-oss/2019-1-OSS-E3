@@ -40,6 +40,7 @@ def move1():
 
     if head == food:
         print('Score:', len(snake))
+        print("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ")
         food.x = randrange(-15, 15) * 10
         food.y = randrange(-15, 15) * 10
     else:
@@ -68,6 +69,7 @@ def move2():
 
     if head == food:
         print('Score:', len(snake))
+        print("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ")
         food.x = randrange(-15, 15) * 10
         food.y = randrange(-15, 15) * 10
     else:
@@ -96,6 +98,7 @@ def move3():
 
     if head == food:
         print('Score:', len(snake))
+        print("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ")
         food.x = randrange(-15, 15) * 10
         food.y = randrange(-15, 15) * 10
     else:
@@ -124,6 +127,7 @@ def move4():
 
     if head == food:
         print('Score:', len(snake))
+        print("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ")
         food.x = randrange(-15, 15) * 10
         food.y = randrange(-15, 15) * 10
     else:
@@ -138,10 +142,10 @@ def move4():
     update()
     ontimer(move4, 40)
 
-while(True):
-    number = input("Welcome to Snake! Choose your mode \n1.Easy \n2.Normal \n3.Hard \n4.Crazy \n5.End Game \n")
 
-    if(number == str(1)):
+number = input("Welcome to Snake! Choose your mode \n1. Easy \n2. Normal \n3. Hard \n4. Crazy \n")
+
+if(number == '1'):
         setup(420, 420, 370, 0)
         hideturtle()
         tracer(False)
@@ -151,9 +155,9 @@ while(True):
         onkey(lambda: change(0, 10), 'Up')
         onkey(lambda: change(0, -10), 'Down')
         move1()
-        done()
+        exitonclick()
 
-    elif(number == str(2)):
+elif(number == '2'):
         setup(420, 420, 370, 0)
         hideturtle()
         tracer(False)
@@ -163,9 +167,9 @@ while(True):
         onkey(lambda: change(0, 10), 'Up')
         onkey(lambda: change(0, -10), 'Down')
         move2()
-        done()
-
-    elif(number == str(3)):
+        exitonclick()
+       
+elif(number == '3'):
         setup(420, 420, 370, 0)
         hideturtle()
         tracer(False)
@@ -175,9 +179,9 @@ while(True):
         onkey(lambda: change(0, 10), 'Up')
         onkey(lambda: change(0, -10), 'Down')
         move3()
-        done()
+        exitonclick()
 
-    elif(number == str(4)):
+elif(number == '4'):
         setup(420, 420, 370, 0)
         hideturtle()
         tracer(False)
@@ -187,10 +191,6 @@ while(True):
         onkey(lambda: change(0, 10), 'Up')
         onkey(lambda: change(0, -10), 'Down')
         move4()
-        done()
-
-    elif(number == str(5)):
-        break
-
+        exitonclick()
 
 
