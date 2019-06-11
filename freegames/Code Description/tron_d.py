@@ -1,16 +1,18 @@
-"""Tron, classic arcade game.
+"""Tron.py를 한국어로 알기 쉽게 설명하는 파일"""
 
-Exercises
+"""Tron, classic arcade game.                                   # Tron, 클래식 아케이드 게임
+  
+Exercises                                                       # 연습문제들
 
-1. Make the tron players faster/slower.
-2. Stop a tron player from running into itself.
-3. Allow the tron player to go around the edge of the screen.
-4. How would you create a computer player?
+1. Make the tron players faster/slower.                         # 1. tron 플레이어들의 속도를 빠르게/느리게 만들자
+2. Stop a tron player from running into itself.                 # 2. tron 플레이어가 스스로 뛰어드는 것을 막자
+3. Allow the tron player to go around the edge of the screen.   # 3. tron 플레이어가 화면의 가장자리를 돌아다닐 수 있게 허용하자 
+4. How would you create a computer player?                      # 4. 컴퓨터 플레이어는 어떻게 만들 수 있을까?
 
 """
 
-from turtle import *
-from freegames import square, vector
+from turtle import *                                            # turtle 모듈을 불러온다
+from freegames import square, vector                            # freegames utils.py에서 선언된 square와 vector를 불러온다
 
 p1xy = vector(-100, 0)
 p1aim = vector(4, 0)
