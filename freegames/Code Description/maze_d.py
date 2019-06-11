@@ -29,21 +29,21 @@ def draw():                                                     # maze를 그리
 
     update()                                                    # 화면을 갱신해준다
 
-def tap(x, y):                                                  # 
-    "Draw line and dot for screen tap."
-    if abs(x) > 198 or abs(y) > 198:
-        up()
+def tap(x, y):                                                  # 화면에 빨간색 점을 찍거나 직선을 그려주는 함수
+    "Draw line and dot for screen tap."                         # 만약 x값이 198보다 크거나 y값이 198보다 크면 펜을 들고 
+    if abs(x) > 198 or abs(y) > 198:                            # 그렇지 않으면 down 함수를 통해 그려준다
+        up()                                                    # 너비는 2로 하고 색깔은 빨간색이면 (x, y)로 가서 반경이 4인 원을 그려 점이 표시되도록 해준다
     else:
         down()
 
-    width(2)
+    width(2)                                                        
     color('red')
     goto(x, y)
     dot(4)
 
-setup(420, 420, 370, 0)
-hideturtle()
-tracer(False)
-draw()
-onscreenclick(tap)
-done()
+setup(420, 420, 370, 0)                                         # 초기 그래픽 설정을 해준다
+hideturtle()                                                    # turtle 모듈의 거북이를 숨겨준다
+tracer(False)                                                   # 거북이가 움직이는 자취를 숨겨준다
+draw()                                                          # 화면에 그림을 그려주는 draw 함수를 실행시켜준다
+onscreenclick(tap)                                              # 사용자가 화면을 클릭했을 때 tap함수를 실행시켜준다
+done()                                                          # turtle 모듈을 종료시켜준다
