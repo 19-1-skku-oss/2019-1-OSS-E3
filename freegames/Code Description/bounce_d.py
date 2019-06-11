@@ -33,14 +33,14 @@ def draw():                                                     # 공을 움직�
     if x < -200 or x > 200:                                     # 만약 x가 -200보다 작거나 200보다 크면 aim의 x좌표의 부호를 바꿔준다        
         aim.x = -aim.x
 
-    if y < -200 or y > 200:
+    if y < -200 or y > 200:                                     # 만약 y가 -200보다 작거나 200보다 크면 aim의 x좌표의 부호를 바꿔준다
         aim.y = -aim.y
 
-    clear()
-    goto(x, y)
-    dot(10)
+    clear()                                                     # turtle 모듈의 함수인데 거북이를 그대로 둔 채 화면을 지워준다    
+    goto(x, y)                                                  # 거북이를 (x, y)좌표로 이동시켜준다
+    dot(10)                                                     # 거북이가 있는 위치에 반경 10인 원을 그려준다
 
-    ontimer(draw, 50)
+    ontimer(draw, 50)                                           # 50ms 마다 draw 함수가 실행되도록 해준다
 
 setup(420, 420, 370, 0)
 hideturtle()
