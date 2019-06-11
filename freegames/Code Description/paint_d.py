@@ -15,16 +15,16 @@ Exercises                                                       # 연습문제�
 from turtle import *                                            # turtle 모듈을 불러온다
 from freegames import vector                                    # freegames utils.py에서 선언된 vector를 불러온다
 
-def line(start, end):
-    "Draw line from start to end."
-    up()
+def line(start, end):                                           # 시작점부터 끝점까지 직선을 그리는 함수
+    "Draw line from start to end."                              # 펜을 들어 시작점으로 이동해서 그 곳에서부터 그리기 시작해서 끝점까지 이동하여 직선을 그려준다
+    up()                                                        
     goto(start.x, start.y)
     down()
     goto(end.x, end.y)
 
-def square(start, end):
-    "Draw square from start to end."
-    up()
+def square(start, end):                                         # 시작점부터 끝점까지 사각형을 그리는 함수
+    "Draw square from start to end."                            # 펜을 들어 시작점으로 이동해서 사각형의 네 모서리를 돌면서 색을 채워준다
+    up()                                                        # 색 채우기가 완료되면 작업을 끝내준다
     goto(start.x, start.y)
     down()
     begin_fill()
@@ -35,7 +35,7 @@ def square(start, end):
 
     end_fill()
 
-def circle(start, end):
+def circle(start, end):                                         #
     "Draw circle from start to end."
     pass  # TODO
 
