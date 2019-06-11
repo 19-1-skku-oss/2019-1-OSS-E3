@@ -21,16 +21,15 @@ Free Python Games 는 배우는만큼 즐거움을 얻는 것을 목표로, 2012
 
 - 플레이하는게 재미있습니다.
 - 간단한 Python 코드로 작성되었습니다.
-- 설치하기가 쉽다
-- 교육을 위해 고안되었다
-- Python 표준 라이브러리에만 의존한다
-- 교실 강의에서 수백 시간 사용되었다
-- 모든것들이 문서화 되어있다
-- 100% 검증되었다
-- Python 3.7에서 개발되었다
-- CPython 2.7, 3.4, 3.5, 3.6, 그리고 3.7에서 검증했다
-- 윈도우, 맥 OS X, 라스베리 파이, 그리고 리눅스에서 검증했다
-- Travis CI와 AppVeyor CI를 사용하여 검증했다
+- 설치하기 쉽습니다.
+- 교육을 위해 고안되었습니다.
+- Python 표준 라이브러리만 사용합니다.
+- 교실 강의에서 수백 시간 사용되었습니다.
+- 모든것들이 문서화 되어있습니다.
+- Python 3.7에서 개발되었습니다.
+- CPython 2.7, 3.4, 3.5, 3.6, 그리고 3.7에서 검증되었습니다.
+- 윈도우, 맥 OS X, 라스베리 파이, 그리고 리눅스에서 검증되었습니다.
+- Travis CI와 AppVeyor CI를 사용하여 검증되었습니다.
 
 
 [![](https://api.travis-ci.org/grantjenks/free-python-games.svg?branch=master)](http://www.grantjenks.com/docs/freegames/)
