@@ -47,4 +47,4 @@ hideturtle()                                                    # turtle 모듈�
 tracer(False)                                                   # 거북이가 움직이는 자취를 숨겨준다
 up()                                                            # 펜을 들게 해준다
 draw()                                                          # 들고 있는 펜으로 화면 위에 그림을 그려준다    
-done()                                                          # turtle 모듈을 일시정지 시켜준다        
+done()                                                          # turtle 모듈을 종료 시켜준다        
