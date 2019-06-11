@@ -108,9 +108,7 @@ Python은 Python 코드를 실행할 수 있는 IDLE이라는 이름의 기본 �
 
 Copyright 2017-2019 Grant Jenks
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License.  You may obtain a copy of the
-License at
+Apache 라이센스, 버전 2.0 (이하 "라이센스")에 의거하여 라이센스가 부여됩니다. 귀하는 라이센스를 준수하는 경우를 제외하고는이 파일을 사용할 수 없습니다. 라이센스의 사본은 다음 주소에서 얻을 수 있습니다.
 
   <http://www.apache.org/licenses/LICENSE-2.0>
 
