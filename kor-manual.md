@@ -112,7 +112,4 @@ Apache 라이센스, 버전 2.0 (이하 "라이센스")에 의거하여 라이�
 
   <http://www.apache.org/licenses/LICENSE-2.0>
 
-Unless required by applicable law or agreed to in writing, software distributed
-under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-CONDITIONS OF ANY KIND, either express or implied.  See the License for the
-specific language governing permissions and limitations under the License.
+관련 법률에 의해 요구되거나 서면으로 동의하지 않는 한, 라이센스에 따라 배포 된 소프트웨어는 명시적 또는 묵시적으로 어떠한 종류의 보증이나 조건없이 "있는 그대로"의 상태로 배포됩니다. 라이센스에 따라 사용 권한 및 제한 사항을 규정 한 특정 언어에 대한 라이센스를 참조하십시오.
