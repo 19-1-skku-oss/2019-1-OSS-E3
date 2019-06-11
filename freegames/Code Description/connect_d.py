@@ -12,8 +12,8 @@
 
 """
 
-from turtle import *
-from freegames import line
+from turtle import *                                                # turrtle 모듈을 불러온다    
+from freegames import line                                          # freegames 모듈에서 line함수를 불러온다            
 
 turns = {'red': 'yellow', 'yellow': 'red'}
 state = {'player': 'yellow', 'rows': [0] * 8}
