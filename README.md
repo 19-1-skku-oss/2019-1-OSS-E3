@@ -89,7 +89,7 @@ help function:
 ## Our Roles
 
 - 김민수 : gh-page 편집(project, main), pong.py 코드 수정
-- 박정재 : README.md 수정, kor-manual.md 번역, snake.py 코드수정, 여러 코드 Description
+- 박정재 : README.md 수정, kor-manual.md 번역, snake_m.py 코드수정, 여러 코드 Description
 - 유재원 : gh-page 편집, flappy.py 코드수정, 
 - 이재웅 : Wiki 관리, 프로젝트 업데이트, Tiles,py 코드수정 및 Description 
 
