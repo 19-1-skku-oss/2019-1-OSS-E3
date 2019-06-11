@@ -34,7 +34,7 @@ def grid():
     update()
 
 def tap(x, y):                                                      # 사용자에게 입력받았을 때의 동작 
-    "Draw red or yellow circle in tapped row."                      #
+    "Draw red or yellow circle in tapped row."                      # 빨간색 또는 노란색 원을 그린다.
     player = state['player']
     rows = state['rows']
 
@@ -52,9 +52,9 @@ def tap(x, y):                                                      # 사용자�
     rows[row] = count + 1
     state['player'] = turns[player]
 
-setup(420, 420, 370, 0)                                             # Grid(배경 판) 만들기
-hideturtle()                                                        # turtle 이미지 
-tracer(False)
-grid()
+setup(420, 420, 370, 0)                                             # Grid(배경 판) 설정
+hideturtle()                                                        # turtle 이미지 없애기
+tracer(False)                                                       # 그리기 멈추기
+grid()                                                              # grid 그리기
 onscreenclick(tap)
 done()
