@@ -1,10 +1,15 @@
-"""Connect Four
-Exercises
-1. Change the colors.
-2. Draw squares instead of circles for open spaces.
-3. Add logic to detect a full row.
-4. Create a random computer player.
-5. How would you detect a winner?
+"""connect.py를 한국어로 알기 쉽게 설명하는 파일"""  
+
+
+
+"""Connect Four Exercises                                           # 연습문제
+
+1. Change the colors.                                               # 1. 색깔을 바꿔보세요.
+2. Draw squares instead of circles for open spaces.                 # 2. 빈공간에 원을 대신해 사각형을 그려보세요.
+3. Add logic to detect a full row.                                  # 3. 꽉 찬 열을 판단하는 코드를 작성해 보세요.
+4. Create a random computer player.                                 # 4. 가상의 컴퓨터 플레이어를 만들어보세요.
+5. How would you detect a winner?                                   # 5. 어떻게하면 승자를 판단할 수 있을까요?                
+
 """
 
 from turtle import *
