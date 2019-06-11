@@ -21,9 +21,8 @@ comments: true
  <br>
  <br>
  
-## **김민수**
+## 김민수
 
-#### 코드에 대한 소개 추가
 
 [**Pong**](http://www.grantjenks.com/docs/freegames/pong.html)
 -----
@@ -223,7 +222,7 @@ down. The first player to miss the ball loses.
  <br>
  <br>
 
-## **박정재**
+## 박정재
 
 [**Snake**](http://www.grantjenks.com/docs/freegames/snake.html)
 -----
@@ -437,7 +436,7 @@ longer. Avoid eating yourself or going out of bounds!
  <br>
  <br>
 
-## **유재원**
+## 유재원
 
 [**Flappy**](http://www.grantjenks.com/docs/freegames/flappy.html)
 -----
@@ -607,7 +606,7 @@ wings. Watch out for black ravens as you fly across the screen.
  <br>
  <br>
 
-## **이재웅**
+## 이재웅
 
 [**Tiles**](http://www.grantjenks.com/docs/freegames/tiles.html)
 -----
