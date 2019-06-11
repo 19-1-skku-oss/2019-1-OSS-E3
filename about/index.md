@@ -6,7 +6,7 @@ date: 2019-06-06
 comments: false
 ---
     
-<center><u> Free Python Games are written in simple Python code and designed for experimentation and changes. Our project is to comment out and code review to make it easy for Python beginners to edit the game. </center>
+<center><u>Free Python Games</u> is an Apache2 licensed collection of free Python games intended for education and fun.</center>
 
 ## 2019-1-OSS-E3 Team Members
 
