@@ -20,12 +20,12 @@ state = {'player': 'yellow', 'rows': [0] * 8}                       # 현재 플
 
 def grid():                                         
     "Draw Connect Four grid."                                       # 
-    bgcolor('light blue')
+    bgcolor('light blue')                                           # 배경색 설정
 
-    for x in range(-150, 200, 50):
+    for x in range(-150, 200, 50):                                  #
         line(x, -200, x, 200)
 
-    for x in range(-175, 200, 50):
+    for x in range(-175, 200, 50):                                  #
         for y in range(-175, 200, 50):
             up()
             goto(x, y)
@@ -34,7 +34,7 @@ def grid():
     update()
 
 def tap(x, y):
-    "Draw red or yellow circle in tapped row."
+    "Draw red or yellow circle in tapped row."                      #
     player = state['player']
     rows = state['rows']
 
@@ -52,7 +52,7 @@ def tap(x, y):
     rows[row] = count + 1
     state['player'] = turns[player]
 
-setup(420, 420, 370, 0)
+setup(420, 420, 370, 0)                                             #  
 hideturtle()
 tracer(False)
 grid()
