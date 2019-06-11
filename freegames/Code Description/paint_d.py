@@ -22,7 +22,7 @@ def line(start, end):                                           # 시작점부�
     down()
     goto(end.x, end.y)
 
-def square(start, end):                                         # 시작점부터 끝점까지 사각형을 그리는 함수
+def square(start, end):                                         # 시작점부터 끝점까지 정사각형을 그리는 함수
     "Draw square from start to end."                            # 펜을 들어 시작점으로 이동해서 사각형의 네 모서리를 돌면서 색을 채워준다
     up()                                                        # 색 채우기가 완료되면 작업을 끝내준다
     goto(start.x, start.y)
@@ -67,7 +67,7 @@ state = {'start': None, 'shape': line}                          # dictionary 자
 setup(420, 420, 370, 0)                                         # 초기 그래픽 설정을 해준다
 onscreenclick(tap)                                              # 사용자가 화면을 클릭했을 때 tap함수를 실행시켜준다 
 listen()                                                        # 사용자가 입력하는 키의 입력을 받아준다
-onkey(undo, 'u')
+onkey(undo, 'u')                                                # 마지막에는 turtle 모듈을 종료 시켜준다
 onkey(lambda: color('black'), 'K')
 onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
