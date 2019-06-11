@@ -45,12 +45,12 @@ def draw():                                                     # 플레이어�
     p1body.add(p1head)                                          # 아까 복사해서 만들었던 p1head를 p1body에 추가시켜준다
     p2body.add(p2head)                                          # 아까 복사해서 만들었던 p2head를 p2body에 추가시켜준다
 
-    square(p1xy.x, p1xy.y, 3, 'red')
-    square(p2xy.x, p2xy.y, 3, 'blue')
-    update()
-    ontimer(draw, 50)
+    square(p1xy.x, p1xy.y, 3, 'red')                            # p1xy가 지나가는 곳에는 빨간색 정사각형을 그려준다
+    square(p2xy.x, p2xy.y, 3, 'blue')                           # p2xy가 지나가는 곳에는 파란색 정사각형을 그려준다
+    update()                                                    # 화면을 갱신해준다
+    ontimer(draw, 50)                                           # 50ms 마다 draw 함수가 실행되도록 해준다
 
-setup(420, 420, 370, 0)
+setup(420, 420, 370, 0)                                         
 hideturtle()
 tracer(False)
 listen()
