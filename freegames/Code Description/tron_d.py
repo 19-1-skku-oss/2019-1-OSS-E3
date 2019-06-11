@@ -50,13 +50,13 @@ def draw():                                                     # 플레이어�
     update()                                                    # 화면을 갱신해준다
     ontimer(draw, 50)                                           # 50ms 마다 draw 함수가 실행되도록 해준다
 
-setup(420, 420, 370, 0)                                         
-hideturtle()
-tracer(False)
-listen()
-onkey(lambda: p1aim.rotate(90), 'a')
-onkey(lambda: p1aim.rotate(-90), 'd')
+setup(420, 420, 370, 0)                                         # 초기 그래픽 설정을 해준다
+hideturtle()                                                    # turtle 모듈의 거북이를 숨겨준다
+tracer(False)                                                   # 거북이가 움직이는 자취를 숨겨준다
+listen()                                                        # 사용자가 입력하는 키의 입력을 받아준다
+onkey(lambda: p1aim.rotate(90), 'a')                            # p1aim에서 'a'는 왼쪽, 'd'는 오른쪽으로 꺾이게 해주고
+onkey(lambda: p1aim.rotate(-90), 'd')                           # p2aim에서 'j'는 왼쪽, 'l'는 오른쪽으로 꺾이게 해주고
 onkey(lambda: p2aim.rotate(90), 'j')
 onkey(lambda: p2aim.rotate(-90), 'l')
-draw()
-done()
+draw()                                                          # 화면에 그림을 그려준다
+done()                                                          # turtle 모듈을 종료 시켜준다  
