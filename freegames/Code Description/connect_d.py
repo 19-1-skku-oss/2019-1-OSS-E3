@@ -52,8 +52,8 @@ def tap(x, y):                                                      # 사용자�
     rows[row] = count + 1
     state['player'] = turns[player]
 
-setup(420, 420, 370, 0)                                             #  
-hideturtle()
+setup(420, 420, 370, 0)                                             # Grid(배경 판) 만들기
+hideturtle()                                                        # turtle 이미지 
 tracer(False)
 grid()
 onscreenclick(tap)
