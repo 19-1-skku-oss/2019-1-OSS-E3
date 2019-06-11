@@ -26,24 +26,24 @@ def inside(head):                                               # tron의 head�
     "Return True if head inside screen."                        # head의 x와 y좌표를 각각 (-200, 200) 사이로 제한해준다
     return -200 < head.x < 200 and -200 < head.y < 200
 
-def draw():                                                     #
+def draw():                                                     # 플레이어들을 진행시키고 화면에 그려주는 함수
     "Advance players and draw game."
-    p1xy.move(p1aim)
-    p1head = p1xy.copy()
+    p1xy.move(p1aim)                                            # p1xy좌표를 p1aim에 설정되있는 좌표만큼 움직여준다
+    p1head = p1xy.copy()                                        # p1xy의 복사본을 만들고 그것을 p1head라고 선언해준다
 
-    p2xy.move(p2aim)
-    p2head = p2xy.copy()
+    p2xy.move(p2aim)                                            # p2xy좌표를 p2aim에 설정되있는 좌표만큼 움직여준다
+    p2head = p2xy.copy()                                        # p2xy의 복사본을 만들고 그것을 p2head라고 선언해준다
 
-    if not inside(p1head) or p1head in p2body:
+    if not inside(p1head) or p1head in p2body:                  # p1head가 범위를 벗어나거나 p2body에 부딪히면 함수를 종료시킨다
         print('Player blue wins!')
         return
 
-    if not inside(p2head) or p2head in p1body:
+    if not inside(p2head) or p2head in p1body:                  # p2head가 범위를 벗어나거나 p1body에 부딪히면 함수를 종료시킨다
         print('Player red wins!')
         return
 
-    p1body.add(p1head)
-    p2body.add(p2head)
+    p1body.add(p1head)                                          # 아까 복사해서 만들었던 p1head를 p1body에 추가시켜준다
+    p2body.add(p2head)                                          # 아까 복사해서 만들었던 p2head를 p2body에 추가시켜준다
 
     square(p1xy.x, p1xy.y, 3, 'red')
     square(p2xy.x, p2xy.y, 3, 'blue')
