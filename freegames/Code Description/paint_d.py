@@ -1,6 +1,6 @@
 """Paint.py를 한국어로 알기 쉽게 설명하는 파일"""
 
-"""Paint, for drawing shapes.                                   # Paint, 모양을 그리기 위한 게임
+"""Paint, for drawing shapes.                                   # Paint, 도형을 그리기 위한 게임
 
 Exercises                                                       # 연습문제들
 
@@ -35,22 +35,22 @@ def square(start, end):                                         # 시작점부�
 
     end_fill()
 
-def circle(start, end):                                         #
+def circle(start, end):                                         # 원을 그리는 함수 만들어보기
     "Draw circle from start to end."
     pass  # TODO
 
-def rectangle(start, end):
+def rectangle(start, end):                                      # 직사각형을 그리는 함수 만들어보기
     "Draw rectangle from start to end."
     pass  # TODO
 
-def triangle(start, end):
+def triangle(start, end):                                       # 삼각형을 그리는 함수 만들어보기
     "Draw triangle from start to end."
     pass  # TODO
 
-def tap(x, y):
-    "Store starting point or draw shape."
-    start = state['start']
-
+def tap(x, y):                                                  # 시작점을 저장하거나  도형을 그리는 함수
+    "Store starting point or draw shape."                       # start변수에 dictionary형 변수를 선언해 주고 비어있다면 (x, y) 좌표를 설정해준다
+    start = state['start']                                      # shape변수에도 dictionary형 변수를 선언해 주고 끝점을 의미하는 end에 (x, y) 좌표를 설정해준다
+                                                                # 그리고 시작점부터 끝점까지의 도형을 그려준다
     if start is None:
         state['start'] = vector(x, y)
     else:
@@ -59,12 +59,12 @@ def tap(x, y):
         shape(start, end)
         state['start'] = None
 
-def store(key, value):
+def store(key, value):                                          # dictionary 자료형을 가진 state에 key와 value값을 저장해주는 함수
     "Store value in state at key."
     state[key] = value
 
-state = {'start': None, 'shape': line}
-setup(420, 420, 370, 0)
+state = {'start': None, 'shape': line}                          # dictionary 자료형인 state변수를 만들어준다
+setup(420, 420, 370, 0)                                         
 onscreenclick(tap)
 listen()
 onkey(undo, 'u')
