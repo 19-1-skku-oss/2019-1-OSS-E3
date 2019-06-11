@@ -16,7 +16,7 @@ comments: true
 ![game](http://pluspng.com/img-png/game-png-black-and-white-game-controller-icon-a-controller-icon-is-a-u-shaped-object-because-the-top-and-png-50-px-1600.png)    
     
 <center><b>Free python games</b> for amateur programmers.</center>
- 
+ <br><br>
  이 프로젝트 페이지는 저희가 **수정** 혹은 **기여**한 파이썬 코드들을 정리한 곳입니다. 
  <br>
  <br>
