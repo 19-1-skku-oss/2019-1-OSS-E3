@@ -55,7 +55,7 @@ hideturtle()                                                    # turtle 모듈�
 tracer(False)                                                   # 거북이가 움직이는 자취를 숨겨준다
 listen()                                                        # 사용자가 입력하는 키의 입력을 받아준다
 onkey(lambda: p1aim.rotate(90), 'a')                            # p1aim에서 'a'는 왼쪽, 'd'는 오른쪽으로 꺾이게 해주고
-onkey(lambda: p1aim.rotate(-90), 'd')                           # p2aim에서 'j'는 왼쪽, 'l'는 오른쪽으로 꺾이게 해주고
+onkey(lambda: p1aim.rotate(-90), 'd')                           # p2aim에서 'j'는 왼쪽, 'l'는 오른쪽으로 꺾이게 해준다
 onkey(lambda: p2aim.rotate(90), 'j')
 onkey(lambda: p2aim.rotate(-90), 'l')
 draw()                                                          # 화면에 그림을 그려준다
