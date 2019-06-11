@@ -14,19 +14,19 @@ Exercises                                                       # 연습문제�
 from turtle import *                                            # turtle 모듈을 불러온다
 from freegames import square, vector                            # freegames utils.py에서 선언된 square와 vector를 불러온다
 
-p1xy = vector(-100, 0)
-p1aim = vector(4, 0)
-p1body = set()
+p1xy = vector(-100, 0)                                          # p1xy는 초기 좌표를 (-100, 0)으로 설정해준다
+p1aim = vector(4, 0)                                            # p1aim은 초기 좌표를 (4, 0)으로 설정해준다
+p1body = set()                                                  # p1body를 집합 자료형인 set으로 설정해준다
 
-p2xy = vector(100, 0)
-p2aim = vector(-4, 0)
-p2body = set()
+p2xy = vector(100, 0)                                           # p1xy는 초기 좌표를 (-100, 0)으로 설정해준다                                            # p1aim은 초기 좌표를 (4, 0)으로 설정해준다                                              # p1body를 집합 자료형은 set으로 설정해준다
+p2aim = vector(-4, 0)                                           # p2aim은 초기 좌표를 (-4, 0)으로 설정해준다
+p2body = set()                                                  # p2body를 집합 자료형인 set으로 설정해준다
 
-def inside(head):
-    "Return True if head inside screen."
+def inside(head):                                               # tron의 head의 범위를 제한해주는 함수
+    "Return True if head inside screen."                        # head의 x와 y좌표를 각각 (-200, 200) 사이로 제한해준다
     return -200 < head.x < 200 and -200 < head.y < 200
 
-def draw():
+def draw():                                                     #
     "Advance players and draw game."
     p1xy.move(p1aim)
     p1head = p1xy.copy()
