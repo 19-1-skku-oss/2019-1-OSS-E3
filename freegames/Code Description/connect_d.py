@@ -39,22 +39,22 @@ def tap(x, y):                                                      # 사용자�
     rows = state['rows']                                            # 선언된 배열을 이용한 상태 표시 (행)
 
     row = int((x + 200) // 50)
-    count = rows[row]
+    count = rows[row]                                               # 행 갯수 세기        
 
     x = ((x + 200) // 50) * 50 - 200 + 25
     y = count * 50 - 200 + 25
 
     up()
-    goto(x, y)
-    dot(40, player)                                                 # 원 
+    goto(x, y)                                                      # x,y 좌표로 이동하기
+    dot(40, player)                                                 # 원 그리기
     update()
 
     rows[row] = count + 1
-    state['player'] = turns[player]
+    state['player'] = turns[player]                                 
 
 setup(420, 420, 370, 0)                                             # Grid(배경 판) 설정
 hideturtle()                                                        # turtle 이미지 없애기
 tracer(False)                                                       # 그리기 멈추기
 grid()                                                              # grid 그리기
-onscreenclick(tap)
-done()
+onscreenclick(tap)                                                  # tap을 클릭감지로 설정     
+done()                                                              # 끝
