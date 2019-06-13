@@ -35,8 +35,8 @@ def grid():
 
 def tap(x, y):                                                      # 사용자에게 입력받았을 때의 동작 
     "Draw red or yellow circle in tapped row."                      # 빨간색 또는 노란색 원을 그린다.
-    player = state['player']
-    rows = state['rows']
+    player = state['player']                                        # 선언된 배열을 이용한 상태 표시 (사용자)
+    rows = state['rows']                                            # 선언된 배열을 이용한 상태 표시 (행)
 
     row = int((x + 200) // 50)
     count = rows[row]
@@ -46,7 +46,7 @@ def tap(x, y):                                                      # 사용자�
 
     up()
     goto(x, y)
-    dot(40, player)
+    dot(40, player)                                                 # 원
     update()
 
     rows[row] = count + 1
