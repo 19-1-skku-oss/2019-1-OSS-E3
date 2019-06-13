@@ -22,10 +22,10 @@ def grid():
     "Draw Connect Four grid."                                       # 배경이 되는 판 그리기 함수
     bgcolor('light blue')                                           # 배경색 설정
 
-    for x in range(-150, 200, 50):                                  # 
+    for x in range(-150, 200, 50):                                  # 분할을 위한 세로선 그리기
         line(x, -200, x, 200)
 
-    for x in range(-175, 200, 50):                                  #
+    for x in range(-175, 200, 50):                                  # 원 주변 배경 
         for y in range(-175, 200, 50):
             up()
             goto(x, y)
