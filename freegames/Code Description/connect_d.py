@@ -29,7 +29,7 @@ def grid():
         for y in range(-175, 200, 50):
             up()
             goto(x, y)
-            dot(40, 'white')                                        # 원그리기 (크기, 색깔)
+            dot(40, 'white')                                        # 원 그리기 (크기, 색깔)
 
     update()
 
@@ -46,7 +46,7 @@ def tap(x, y):                                                      # 사용자�
 
     up()
     goto(x, y)
-    dot(40, player)                                                 # 원
+    dot(40, player)                                                 # 원 
     update()
 
     rows[row] = count + 1
