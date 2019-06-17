@@ -143,7 +143,7 @@ def move4():
     ontimer(move4, 40)
 
 
-number = input("Welcome to Snake! Choose your mode \n1. Easy \n2. Normal \n3. Hard \n4. Crazy \n")
+number = input("Welcome to Snake! Choose your mode!\nㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\n1. Easy \n2. Normal \n3. Hard \n4. Crazy\nㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\n")
 
 if(number == '1'):
         setup(420, 420, 370, 0)
