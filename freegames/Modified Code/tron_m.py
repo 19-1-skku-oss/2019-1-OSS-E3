@@ -96,7 +96,7 @@ def draw3():
     update()
     ontimer(draw1, 10)
 
-number = input("Welcome to Snake! Choose your mode \n1. Peaceful \n2. Interesting \n3. Crazy \n")
+number = input("Welcome to Tron! This game requires two players~\nChoose your mode!\nㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\n1. Peaceful \n2. Interesting \n3. Crazy\nㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\n")
 
 if(number == '1'):
     setup(420, 420, 370, 0)
