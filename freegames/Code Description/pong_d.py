@@ -1,3 +1,5 @@
+"""pong.py를 한국어로 알기 쉽게 설명하는 파일"""
+
 """Pong, classic arcade game.                                   # Pong, 클래식 아케이드 게임
 
 Excercises                                                      # 연습문제들
