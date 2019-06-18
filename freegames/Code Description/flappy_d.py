@@ -1,3 +1,5 @@
+"""Flappy.py를 한국어로 알기 쉽게 설명하는 파일"""
+
 """Flappy, game inspired by Flappy Bird.
 
 Exercises                                                 #연습문제 
